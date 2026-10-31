@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Создайте портрет из нитей по своей фотографии. Скачайте изображение и понятную инструкцию для намотки. Всё работает на вашем устройстве.">
+  <title>Стринг-арт — портрет из вашей фотографии</title>
+  <style>
+:root{color-scheme:light;--bg:#f5f6f2;--panel:#fff;--text:#263d34;--muted:#627267;--accent:#226d56;--accent-hover:#185640;--soft:#edf4ed;--line:#dde5dd;font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--text);font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.46}a{color:inherit;text-decoration:none}button,input,select,textarea,summary,a{outline-offset:4px}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #7dbca3}[hidden]{display:none!important}.svg-library{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.logo{width:40px;height:40px;flex-shrink:0}.page-width{width:calc(100% - 64px);max-width:1160px;margin-inline:auto}.site-header{height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.brand{display:inline-flex;align-items:center;gap:11px;font-size:20px;font-weight:650;letter-spacing:-.5px}.header-help{font-size:13px;font-weight:550;color:#5c7064;display:flex;gap:12px;align-items:center}.header-help:hover{color:var(--accent)}.header-help span{font-size:19px}.hero{padding:43px 0 36px;text-align:center}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:#68816e;margin:0 0 13px}.hero h1{font-size:44px;line-height:1.15;letter-spacing:-1.6px;font-weight:650;margin:0 0 16px}.hero-description{font-size:16px;line-height:1.65;color:var(--muted);margin:0 auto;max-width:680px}.hero-note{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#647669;margin-top:18px}.hero-note .icon{width:14px;height:14px}.mobile-break{display:none}.generator-grid{display:grid;grid-template-columns:minmax(320px,.85fr) minmax(0,1.2fr);gap:24px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:26px;min-width:0;box-shadow:0 5px 20px #2a493704}.panel-heading{display:flex;align-items:center;gap:12px;margin-bottom:23px}.panel-heading h2{font-size:19px;letter-spacing:-.35px;line-height:1.3;margin:0 0 3px;font-weight:650}.panel-heading p{margin:0;color:var(--muted);font-size:12px}.step-badge{flex-shrink:0;display:grid;place-items:center;border:1px solid #dce7da;background:#f3f7ef;color:#648263;width:33px;height:33px;border-radius:50%;font-size:13px;font-weight:650}.upload-zone{width:100%;height:242px;background:#fafbf8;border:1.5px dashed #bdcdbd;border-radius:18px;padding:15px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:var(--text);transition:border-color .18s,background .18s}.upload-zone:hover,.upload-zone.dragover{border-color:var(--accent);background:#f1f7ee}.upload-zone:disabled{opacity:.65}.upload-symbol{display:grid;place-items:center;width:52px;height:52px;background:#eaf1e5;color:#52815c;border-radius:16px;margin:0 auto 15px}.upload-symbol .icon{width:25px;height:25px}.upload-zone strong{display:block;font-weight:650;font-size:17px}.upload-hint{display:block;color:var(--muted);font-size:13px;margin-top:3px}.upload-zone small{display:block;color:#6b7c6d;font-size:11px;margin-top:18px}.upload-zone img{height:100%;max-width:100%;object-fit:contain;border-radius:9px}.image-tip{font-size:12px;line-height:1.6;color:var(--muted);margin:14px 3px 21px}.advanced-settings{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:21px}summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}.advanced-settings>summary{display:flex;gap:9px;align-items:center;min-height:53px;font-size:13px;font-weight:600}.advanced-settings>summary>.icon{width:17px;height:17px;color:#6b806e}.chevron{margin-left:auto;width:7px;height:7px;border:solid #829082;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);margin-right:4px;flex-shrink:0;transition:transform .15s}details[open]>summary>.chevron{transform:rotate(225deg)}.settings-body{padding:0 0 18px}.settings-intro{margin:0 0 20px;color:var(--muted);font-size:12px;line-height:1.6}.range-field{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 12px;margin-bottom:22px}.range-field label{font-size:13px;font-weight:550}.range-field output{display:inline-block;color:var(--accent);background:var(--soft);border-radius:5px;min-width:40px;text-align:center;padding:0 5px;font-size:12px;font-weight:650;align-self:start;font-variant-numeric:tabular-nums}.range-field input{grid-column:1/-1}.range-field small{grid-column:1/-1;font-size:11px;color:var(--muted);line-height:1.5}input[type=range]{accent-color:var(--accent);width:100%;height:20px;cursor:pointer;margin:0;display:block}.import-details{padding-top:2px}.import-details>summary,.export-details>summary,.player-sequence-details>summary{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted);font-weight:550;padding:9px 0}.import-body{padding-top:9px}.field-title{display:block;font-size:12px;font-weight:600;margin:0 0 8px}.import-body .field-title{margin-top:14px}textarea,select{width:100%;border:1px solid #d2ded2;border-radius:10px;background:#fbfcfa;color:var(--text);padding:10px 12px;font-size:12px;line-height:1.6}textarea{resize:vertical;min-height:80px}select{margin-bottom:19px;cursor:pointer;min-height:40px}.error{color:#b3443d;font-size:12px;line-height:1.55;margin:8px 0}.error:empty{display:none}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 16px;border:1px solid var(--line);border-radius:11px;color:var(--text);background:#fff;font-size:13px;font-weight:600;line-height:1.3;transition:background .15s,border-color .15s}.button:not(:disabled):hover{background:#f4f7f1;border-color:#b7cbb9}.button.primary{background:var(--accent);border-color:var(--accent);color:#fff}.button.primary:not(:disabled):hover{background:var(--accent-hover);border-color:var(--accent-hover)}.button.secondary{background:#f4f7f0;border-color:#d8e3d4;color:#3f6449}.button.secondary:not(:disabled):hover{background:#eaf1e3}.button.quiet{border-color:transparent;background:transparent;color:#69806d;padding:10px 8px;font-weight:550}.button.quiet:not(:disabled):hover{background:#f0f5ed;border-color:transparent}.button.compact{min-height:36px;font-size:11px;padding:8px 11px}.button.danger{color:#a24640;background:#fdf2ef;border-color:#e7c6bf;margin-top:10px}.full{width:100%}.generate-button{min-height:48px;font-size:14px}.generate-button .icon{width:18px;height:18px}.status{font-size:11px;line-height:1.6;color:#627365;margin-top:12px;min-height:18px;text-align:center;overflow-wrap:anywhere}progress{width:100%;height:5px;border:0;border-radius:8px;overflow:hidden;accent-color:var(--accent);background:#e9efe6;display:block;margin-top:16px}progress::-webkit-progress-bar{background:#e9efe6}progress::-webkit-progress-value{background:var(--accent)}.text-button{padding:0;border:0;background:transparent;color:var(--muted);font-size:12px;cursor:pointer}.text-button:hover{text-decoration:underline;text-underline-offset:3px;color:var(--accent)}.reset-button{display:block;margin:10px auto 0;font-size:11px}.preview-panel{padding-bottom:22px}.preview-panel .panel-heading{margin-bottom:19px}.canvas-wrap{position:relative;aspect-ratio:1;background:#fff;border:1px solid #e5eae1;border-radius:17px;overflow:hidden;width:100%;line-height:0}.canvas-wrap canvas{width:100%;height:100%;display:block;object-fit:contain}.preview-empty{position:absolute;inset:0;background:#fafbf7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.5;padding:24px}.empty-art{width:45%;max-width:225px;min-width:120px;height:auto;display:block;margin-bottom:16px}.preview-empty h3{font-size:15px;font-weight:600;color:#60735b;margin:0 0 7px;letter-spacing:-.1px}.preview-empty p{font-size:12px;color:#6a7a64;line-height:1.7;margin:0}.preview-meta{text-align:center;font-size:11px;color:#667766;margin:11px 0 0;min-height:0;font-variant-numeric:tabular-nums}.preview-meta:empty{display:none}.result-actions{margin-top:17px}.primary-downloads{display:grid;grid-template-columns:1fr 1fr;gap:9px}.primary-downloads .button{padding:11px 9px;font-size:12px}.primary-downloads .icon{width:17px;height:17px}.result-tools{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:4px}.result-tools .button{font-size:12px}.result-tools .icon{width:16px;height:16px}.export-details{border-top:1px solid var(--line);margin-top:6px;padding-top:5px}.export-details>div{display:flex;flex-wrap:wrap;gap:7px;padding:8px 0 0}.how-section{padding:61px 0 40px}.section-heading{text-align:center;margin-bottom:29px}.section-heading .eyebrow{font-size:9px;margin-bottom:9px}.section-heading h2,.faq-section h2{font-size:26px;line-height:1.25;font-weight:600;letter-spacing:-.6px;margin:0}.steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;list-style:none;padding:0;margin:0}.steps-grid li{padding:0 8px}.mini-step{font-size:11px;letter-spacing:1px;font-weight:600;color:#7c987c;display:block;margin-bottom:10px}.steps-grid h3{font-size:15px;font-weight:600;margin:0 0 8px;letter-spacing:-.15px}.steps-grid p{font-size:12px;line-height:1.75;color:var(--muted);margin:0;max-width:315px}.faq-section{padding:14px 0 50px;max-width:790px}.faq-section h2{font-size:23px;margin-bottom:19px}.faq-section>details{border-bottom:1px solid var(--line)}.faq-section>details>summary{display:flex;align-items:center;gap:15px;font-size:13px;font-weight:550;min-height:55px;padding:14px 0}.faq-section>details>p{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 19px;padding-right:25px}.site-footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 0 30px}.footer-brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:13px;line-height:1.4}.footer-brand .logo{width:31px;height:31px}.footer-brand small{font-size:10px;color:#687763;font-weight:400}.site-footer .text-button{font-size:11px}.player-dialog,.privacy-dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:24px;padding:26px;max-width:1000px;width:calc(100% - 36px);max-height:calc(100dvh - 36px);box-shadow:0 20px 80px #1d3c2e33}dialog::backdrop{background:#28463266;backdrop-filter:blur(4px)}.dialog-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:24px}.dialog-header h2{font-size:24px;font-weight:600;letter-spacing:-.5px;margin:0;line-height:1.3}.dialog-header .eyebrow{font-size:9px;margin-bottom:8px}.dialog-header p:not(.eyebrow){margin:6px 0 0}.close-button{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#f3f6ee;border:1px solid var(--line);color:#607961;flex-shrink:0;line-height:1;font-size:24px}.close-button:hover{background:#e7eee0}.muted{color:var(--muted)}.small{font-size:12px;line-height:1.6}.player-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(245px,1fr);gap:26px;align-items:start}.player-art{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;line-height:0}.player-art canvas{display:block;width:100%;height:auto}.pin-connection{display:flex;align-items:center;justify-content:center;gap:24px;padding:17px 12px;background:#f2f7ef;border:1px solid #e0eadb;border-radius:15px;text-align:center}.pin-connection div{min-width:62px}.pin-connection span{font-size:11px;color:#7a8f76;display:block}.pin-connection strong{font-size:37px;line-height:1.3;font-weight:600;letter-spacing:-1px;color:var(--accent)}.pin-connection .connection-arrow{font-size:25px;color:#9cb39a}.step-value{text-align:center;font-size:12px;color:var(--muted);margin:16px 0 12px;font-variant-numeric:tabular-nums}.playback-buttons{display:grid;grid-template-columns:1fr 2fr 1fr;gap:7px;margin:18px 0 22px}.player-controls #speed{margin:12px 0}.player-controls #restartPlayer{font-size:12px;margin:3px 0 10px}.player-sequence-details{border-top:1px solid var(--line)}.player-sequence-details textarea{margin-top:7px}.player-sequence-details .button{margin-top:7px;font-size:11px}.privacy-dialog{max-width:550px}.privacy-dialog p{font-size:14px;color:var(--muted);line-height:1.8;margin:13px 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:1400px){.hero{padding-top:50px;padding-bottom:41px}.hero h1{font-size:48px}.generator-grid{grid-template-columns:430px minmax(0,1fr)}}
+@media(max-width:1000px){.page-width{width:calc(100% - 40px)}.site-header{height:76px}.hero{padding-top:35px}.hero h1{font-size:37px}.hero-description{font-size:14px}.generator-grid{gap:18px;grid-template-columns:minmax(290px,.95fr) minmax(0,1.1fr)}.panel{padding:21px;border-radius:20px}.panel-heading{gap:9px}.panel-heading h2{font-size:17px}.panel-heading p{font-size:11px}.upload-zone{height:215px}.preview-empty h3{font-size:13px}.preview-empty p{font-size:11px}.primary-downloads{grid-template-columns:1fr}.steps-grid{gap:25px}.steps-grid li{padding:0}.player-layout{gap:20px;grid-template-columns:minmax(0,1.25fr) minmax(235px,1fr)}}
+@media(max-width:720px){.page-width{width:calc(100% - 32px)}.site-header{height:71px;gap:12px}.brand{font-size:18px;gap:8px}.logo{width:34px;height:34px}.header-help{font-size:11px;gap:6px}.header-help span{font-size:16px}.hero{padding:31px 0 28px}.hero .eyebrow{font-size:8px;letter-spacing:1.5px;line-height:1.6;margin-bottom:12px}.hero h1{font-size:35px;letter-spacing:-1.3px;line-height:1.15;margin-bottom:13px}.mobile-break{display:block}.desktop-break{display:none}.hero-description{font-size:13px;line-height:1.7;max-width:360px}.hero-note{margin-top:14px;font-size:10px}.hero-note .icon{width:12px;height:12px}.generator-grid{grid-template-columns:1fr;gap:17px}.panel{padding:21px;border-radius:20px}.panel-heading{margin-bottom:19px;gap:11px}.panel-heading h2{font-size:18px}.panel-heading p{font-size:12px}.upload-zone{height:210px}.upload-zone strong{font-size:17px}.image-tip{margin-bottom:17px}.advanced-settings{margin-bottom:18px}.primary-downloads{grid-template-columns:1fr 1fr}.primary-downloads .button{font-size:11px;padding:10px 7px}.primary-downloads .icon{width:15px;height:15px}.preview-empty h3{font-size:14px}.preview-empty p{font-size:12px}.empty-art{width:43%;margin-bottom:14px}.how-section{padding-top:44px;padding-bottom:26px}.section-heading{margin-bottom:26px}.section-heading .eyebrow{font-size:8px;letter-spacing:1.4px}.section-heading h2{font-size:23px}.steps-grid{grid-template-columns:1fr;gap:23px}.steps-grid li{position:relative;padding-left:40px}.mini-step{position:absolute;left:0;top:2px;font-size:12px}.steps-grid h3{margin-bottom:5px;font-size:15px}.steps-grid p{font-size:12px;max-width:none}.faq-section{padding:15px 0 35px}.faq-section h2{font-size:21px;margin-bottom:11px}.faq-section>details>summary{font-size:12px;min-height:53px}.site-footer{padding:22px 0;gap:13px}.footer-brand{font-size:12px}.footer-brand small{font-size:9px}.site-footer .text-button{font-size:10px}.player-dialog,.privacy-dialog{padding:18px;width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:18px}.dialog-header{margin-bottom:17px;gap:12px}.dialog-header h2{font-size:21px}.dialog-header .eyebrow{font-size:8px}.dialog-header p:not(.eyebrow){font-size:11px}.player-layout{grid-template-columns:1fr;gap:18px}.player-art{max-width:400px;width:100%;margin-inline:auto}.player-controls{max-width:400px;width:100%;margin-inline:auto}.pin-connection{padding:11px;gap:40px}.pin-connection strong{font-size:33px}.playback-buttons{margin-top:16px;margin-bottom:20px}.privacy-dialog p{font-size:13px}.privacy-dialog .dialog-header h2{font-size:20px}}
+@media(max-width:370px){.page-width{width:calc(100% - 24px)}.panel{padding:17px}.hero h1{font-size:31px}.header-help{font-size:10px}.primary-downloads{grid-template-columns:1fr}.result-tools .button{font-size:11px}.preview-empty{padding:15px}.preview-empty h3{font-size:13px}.site-footer{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+/* Creative refresh: vivid gradients, soft color fields and tactile controls */
+:root{color-scheme:light;--bg:#f5f3ff;--panel:rgba(255,255,255,.92);--text:#24213d;--muted:#716d88;--accent:#7657e8;--accent-hover:#6041d0;--soft:#f0ebff;--line:#e7e1f5;font-family:Inter,"Segoe UI",Arial,sans-serif}
+body{background:radial-gradient(ellipse at 8% 8%,rgba(255,130,169,.19),transparent 28%),radial-gradient(ellipse at 92% 24%,rgba(107,210,231,.2),transparent 29%),linear-gradient(145deg,#fbf8ff 0%,#f2f3ff 52%,#f9f4ff 100%);color:var(--text)}
+.site-header{height:82px;border-bottom:1px solid rgba(126,103,194,.16)}
+.brand{font-weight:750;letter-spacing:-.7px}.logo{filter:drop-shadow(0 5px 10px rgba(118,87,232,.16))}.header-help{color:#70658f;font-weight:650}.header-help span{color:#ec719e}
+.hero{position:relative;padding:58px 0 43px;isolation:isolate}.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border-radius:999px;filter:blur(1px);pointer-events:none}.hero:before{width:88px;height:88px;background:linear-gradient(135deg,#ffb2c8,#ffc98e);opacity:.55;left:5%;top:30px}.hero:after{width:58px;height:58px;background:linear-gradient(135deg,#80dce7,#a99aff);opacity:.65;right:9%;bottom:34px}
+.eyebrow{color:#8a68d9;letter-spacing:2.4px}.hero h1{font-size:clamp(38px,5vw,55px);font-weight:800;letter-spacing:-2.1px;background:linear-gradient(105deg,#6448d5 4%,#a24fd0 48%,#ed719b 92%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-description{color:#716d88}.hero-note{padding:8px 14px;border:1px solid rgba(124,102,198,.16);border-radius:999px;background:rgba(255,255,255,.64);color:#696184;box-shadow:0 5px 18px rgba(90,69,150,.05)}.hero-note .icon{color:#7b5be4}
+.generator-grid{gap:22px}.panel{background:var(--panel);border:1px solid rgba(155,139,208,.22);border-radius:25px;padding:27px;box-shadow:0 16px 44px rgba(70,54,125,.075),0 2px 8px rgba(70,54,125,.035);backdrop-filter:blur(12px)}.panel-heading h2{font-weight:750;color:#30294f}.panel-heading p{color:#827c99}.step-badge{border:0;background:linear-gradient(135deg,#eee8ff,#ffeaf1);color:#7657d9;box-shadow:inset 0 0 0 1px rgba(132,102,218,.1);font-weight:800}
+.upload-zone{background:linear-gradient(145deg,#fbf9ff,#fff8fb);border:1.5px dashed #c8b8f1;border-radius:20px;transition:transform .2s,border-color .2s,box-shadow .2s,background .2s}.upload-zone:hover,.upload-zone.dragover{border-color:#8a68e8;background:linear-gradient(145deg,#f4efff,#fff2f7);box-shadow:0 10px 28px rgba(118,87,232,.1);transform:translateY(-2px)}.upload-symbol{background:linear-gradient(135deg,#7657e8,#a65cdb 58%,#ed7da6);color:#fff;border-radius:17px;box-shadow:0 9px 20px rgba(118,87,232,.2)}.upload-zone strong{color:#332b55}.upload-hint,.upload-zone small{color:#89819e}
+.advanced-settings{border-color:#eee8f7}.advanced-settings>summary>.icon{color:#8b70dc}.range-field output{color:#7657d9;background:#f0ebff;border-radius:7px}.range-field label,.field-title{color:#40395f}input[type=range]{accent-color:#8564e8}textarea,select{border:1px solid #e1d9f1;background:#fdfcff;color:#373052;border-radius:12px}textarea:focus,select:focus{border-color:#9b83ed}
+.button{border:1px solid #e7e0f3;border-radius:13px;background:#fff;color:#433b62;box-shadow:0 2px 5px rgba(66,48,119,.035);transition:transform .18s,box-shadow .18s,background .18s,border-color .18s}.button:not(:disabled):hover{background:#f8f5ff;border-color:#c9b9f2;box-shadow:0 7px 16px rgba(90,67,170,.09);transform:translateY(-1px)}.button.primary{background:linear-gradient(105deg,#7051df,#9858dc 58%,#df6f9d);border:0;color:white;box-shadow:0 8px 19px rgba(126,83,214,.23)}.button.primary:not(:disabled):hover{background:linear-gradient(105deg,#6242d0,#8948cf 58%,#d65f90);box-shadow:0 11px 24px rgba(126,83,214,.29);transform:translateY(-2px)}.button.secondary{background:linear-gradient(120deg,#f1edff,#fff0f5);border-color:#e7dcfa;color:#7255c9}.button.secondary:not(:disabled):hover{background:#eee8ff}.button.quiet{color:#7965b1}.button.quiet:not(:disabled):hover{background:#f4f0ff}.button.danger{background:#fff2f3;color:#bd536a;border-color:#f3d4dc}.generate-button{min-height:52px;font-size:14px;letter-spacing:.1px}.generate-button .icon{filter:drop-shadow(0 1px 2px #ffffff55)}
+.status{color:#77718f}.preview-panel{background:linear-gradient(155deg,rgba(255,255,255,.97),rgba(250,247,255,.94))}.canvas-wrap{border:1px solid #e8e1f4;border-radius:19px;background:#fff;box-shadow:inset 0 0 0 5px #fff,0 8px 24px rgba(80,62,137,.06)}.preview-empty{background:radial-gradient(circle at 50% 42%,#fff 0%,#faf7ff 68%,#fff6fa 100%)}.preview-empty h3{color:#5e4d92}.preview-empty p{color:#827b9c}.preview-meta{color:#7b7297}.result-tools{padding-top:8px}.export-details{border-color:#eee8f7}
+.how-section{padding-top:72px}.section-heading .eyebrow{color:#a06acb}.section-heading h2,.faq-section h2{color:#30294f;font-weight:750}.steps-grid{gap:24px}.steps-grid li{padding:21px 20px;background:rgba(255,255,255,.68);border:1px solid rgba(155,139,208,.18);border-radius:18px;box-shadow:0 8px 24px rgba(70,54,125,.045)}.mini-step{color:#a06bd8}.steps-grid h3{color:#40365f}.steps-grid p{color:#77718c}.faq-section>details{border-color:#e8e1f4}.faq-section>details>summary{color:#463d66}.site-footer{border-color:#e7e1f2}.footer-brand{color:#665b88}
+.player-dialog,.privacy-dialog{border:1px solid #e7def7;border-radius:24px;box-shadow:0 24px 80px rgba(42,29,82,.25)}dialog::backdrop{background:rgba(38,29,67,.48);backdrop-filter:blur(5px)}.dialog-header h2{color:#30294f}.player-art{border-radius:18px;overflow:hidden}.pin-connection{background:linear-gradient(120deg,#f2edff,#fff0f5);border:1px solid #e8def8;border-radius:16px}.pin-connection strong{color:#7657d9}.step-value{color:#72678f}.close-button{background:#f3efff;color:#6c58a8;border-radius:12px}
+@media(max-width:720px){.hero{padding:39px 0 31px}.hero:before{width:55px;height:55px;left:1%;top:18px}.hero:after{width:42px;height:42px;right:2%;bottom:18px}.hero h1{font-size:37px;letter-spacing:-1.6px}.panel{padding:21px;border-radius:21px}.steps-grid li{padding:18px 17px 18px 42px}.how-section{padding-top:48px}}
+@media(prefers-reduced-motion:no-preference){.panel{animation:rise-in .55s both}.preview-panel{animation-delay:.08s}.hero h1{animation:gradient-shift 9s ease-in-out infinite alternate}@keyframes rise-in{from{opacity:.75;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes gradient-shift{from{filter:hue-rotate(-7deg)}to{filter:hue-rotate(8deg)}}}
+
+
+.crop-preview-wrap{width:min(100%,320px);margin:0 auto 18px;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line,#dfe8e2)}
+#cropPreview{display:block;width:100%;height:100%;object-fit:contain}
+.crop-settings[hidden]{display:none}
+
+/* Responsive layout refinement: desktop, tablet and touch-first phones */
+html { overflow-x: clip; }
+body { min-width: 320px; }
+img, canvas, svg { max-width: 100%; }
+.page-width { width: min(100% - 56px, 1280px); }
+.site-header { min-height: 78px; }
+.generator-grid {
+  grid-template-columns: minmax(330px, .88fr) minmax(0, 1.12fr);
+  gap: clamp(18px, 2.2vw, 30px);
+}
+@media (min-width: 1100px) {
+  .preview-panel { position: sticky; top: 18px; }
+  .panel { padding: clamp(22px, 2.1vw, 30px); }
+  .canvas-wrap { max-height: min(68vw, 760px); }
+}
+@media (min-width: 721px) and (max-width: 1050px) {
+  .page-width { width: calc(100% - 40px); }
+  .generator-grid { grid-template-columns: minmax(270px, .9fr) minmax(0, 1.1fr); }
+  .panel { padding: 20px; }
+  .primary-downloads { grid-template-columns: 1fr; }
+  .result-tools { flex-wrap: wrap; }
+}
+@media (max-width: 720px) {
+  .page-width { width: calc(100% - 28px); }
+  .site-header { min-height: 64px; height: auto; padding-block: 10px; }
+  .brand { font-size: 16px; }
+  .brand .logo { width: 31px; height: 31px; }
+  .header-help { font-size: 11px; white-space: nowrap; }
+  .hero { padding: 30px 0 24px; }
+  .hero h1 { font-size: clamp(30px, 8.5vw, 39px); line-height: 1.12; }
+  .hero-description { max-width: 34rem; font-size: 13px; }
+  .generator-grid { display: flex; flex-direction: column; gap: 14px; }
+  .generator-grid > .panel { width: 100%; }
+  .panel { padding: clamp(16px, 4.5vw, 21px); border-radius: 19px; }
+  .panel-heading { margin-bottom: 16px; }
+  .upload-zone { min-height: 190px; height: clamp(190px, 54vw, 235px); }
+  .button { min-height: 46px; }
+  .generate-button { min-height: 50px; }
+  input[type="range"] { height: 30px; }
+  select, textarea { font-size: 16px; } /* prevents iOS zoom on focus */
+  .primary-downloads { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .primary-downloads .button { min-height: 46px; white-space: normal; }
+  .result-tools { flex-wrap: wrap; }
+  .result-tools .button { flex: 1 1 auto; }
+  .canvas-wrap { border-radius: 15px; }
+  .how-section { padding: 42px 0 24px; }
+  .steps-grid { gap: 12px; }
+  .steps-grid li { min-width: 0; }
+  .faq-section { padding-bottom: 28px; }
+  .site-footer { align-items: center; }
+  .player-dialog, .privacy-dialog {
+    width: calc(100% - 16px);
+    max-height: calc(100dvh - 16px);
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .player-layout { grid-template-columns: minmax(0, 1fr); }
+  .player-art, .player-controls { max-width: 100%; }
+}
+@media (max-width: 390px) {
+  .page-width { width: calc(100% - 20px); }
+  .header-help { gap: 3px; font-size: 10px; }
+  .hero h1 { font-size: 30px; }
+  .panel { padding: 15px; }
+  .primary-downloads { grid-template-columns: 1fr; }
+  .primary-downloads .button { min-height: 44px; }
+  .result-tools { flex-direction: column; align-items: stretch; }
+  .result-tools .button { width: 100%; }
+  .site-footer { align-items: flex-start; flex-direction: column; }
+}
+@media (hover: none) and (pointer: coarse) {
+  .button:not(:disabled):hover, .upload-zone:hover { transform: none; }
+  button, summary, input, select { touch-action: manipulation; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+
+</style>
+</head>
+<body>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 14v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/></symbol>
+  <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+  <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 4v3"/></symbol>
+  <symbol id="icon-tune" viewBox="0 0 24 24"><path d="M4 7h4m4 0h8M4 17h8m4 0h4"/><circle cx="10" cy="7" r="2"/><circle cx="14" cy="17" r="2"/></symbol>
+  <symbol id="logo" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#e3eee7" stroke="none"/><path d="m20 3 16 23L9 33 20 3 32 8 5 23l31 3L8 9l12 28L32 8 9 33 8 9l28 17L20 3 5 23l15 14" fill="none" stroke="#287462" stroke-width=".8"/></symbol>
+</svg>
+<header class="site-header page-width">
+  <a class="brand" href="#top" aria-label="Стринг-арт — в начало"><svg class="logo"><use href="#logo"/></svg><span>Стринг-арт</span></a>
+  <a class="header-help" href="#how-it-works">Как это работает <span aria-hidden="true">↗</span></a>
+</header>
+<main id="top">
+  <section class="hero page-width">
+    <p class="eyebrow">МАЛЕНЬКИЙ ШАГ К БОЛЬШОМУ ТВОРЧЕСТВУ</p>
+    <h1>Ваше фото.<br class="mobile-break"> Портрет из нитей.</h1>
+    <p class="hero-description">Загрузите фотографию — получите рисунок и последовательность<br class="desktop-break"> намотки. Останется взять нить и создать свою картину.</p>
+    <div class="hero-note"><svg class="icon"><use href="#icon-lock"/></svg>Фото остаётся на вашем устройстве</div>
+  </section>
+
+  <section class="generator-grid page-width" id="generator" aria-label="Создание портрета из нитей">
+    <div class="panel control-panel">
+      <div class="panel-heading"><span class="step-badge">1</span><div><h2>Выберите фотографию</h2><p>Лучше всего подойдёт крупный портрет</p></div></div>
+      <div id="generatePanel">
+        <input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+        <button id="uploadZone" class="upload-zone" type="button" aria-label="Выбрать или заменить фотографию">
+          <span id="uploadPlaceholder"><span class="upload-symbol"><svg class="icon"><use href="#icon-upload"/></svg></span><strong>Загрузить фото</strong><span class="upload-hint">или перетащить его сюда</span><small>JPG, PNG, WebP · до 30 МБ</small></span>
+          <img id="sourcePreview" alt="Ваша выбранная фотография" hidden>
+        </button>
+        <p class="image-tip">Лицо крупным планом, светлый фон и чёткие черты помогут получить более выразительный портрет.</p>
+        <details id="cropSettings" class="advanced-settings crop-settings" hidden>
+          <summary><svg class="icon"><use href="#icon-tune"/></svg><span>Обрезать фотографию</span><span class="chevron" aria-hidden="true"></span></summary>
+          <div class="settings-body">
+            <p class="settings-intro">Выберите нужную часть фото. Для String Art используется квадратная область.</p>
+            <div class="crop-preview-wrap"><canvas id="cropPreview" width="320" height="320" aria-label="Предпросмотр обрезки фотографии"></canvas></div>
+            <div class="range-field"><label for="cropZoom">Масштаб</label><output id="cropZoomValue">100%</output><input id="cropZoom" type="range" min="100" max="250" step="1" value="100"></div>
+            <div class="range-field"><label for="cropX">По горизонтали</label><output id="cropXValue">50%</output><input id="cropX" type="range" min="0" max="100" step="1" value="50"></div>
+            <div class="range-field"><label for="cropY">По вертикали</label><output id="cropYValue">50%</output><input id="cropY" type="range" min="0" max="100" step="1" value="50"></div>
+            <button id="cropReset" class="button secondary full" type="button">Сбросить обрезку</button>
+          </div>
+        </details>
+
+        <details id="advancedSettings" class="advanced-settings">
+          <summary><svg class="icon"><use href="#icon-tune"/></svg><span>Дополнительно</span><span class="chevron" aria-hidden="true"></span></summary>
+          <div class="settings-body">
+            <p class="settings-intro">Можно начать с готовых настроек. Если у вас уже есть набор, укажите количество гвоздей на его основе.</p>
+            <div class="range-field"><label for="pins">Количество гвоздей</label><output id="pinsValue" for="pins">288</output><input id="pins" type="range" min="50" max="800" step="1" value="288"></div>
+            <div class="range-field"><label for="lines">Количество линий</label><output id="linesValue" for="lines">4000</output><input id="lines" type="range" min="500" max="20000" step="100" value="3000"><small>Больше линий — плотнее рисунок.</small></div>
+            <div class="range-field"><label for="generationMode">Режим построения</label><select id="generationMode"><option value="smart">Умный — лучшее качество</option><option value="exact">Точное количество линий</option></select><small>«Умный» останавливается, когда новые нити перестают улучшать фото. «Точное количество» продолжает до заданного числа; последние линии могут затемнять и перегружать рисунок.</small></div>
+            <div class="range-field"><label for="thickness">Толщина линий на экране</label><output id="thicknessValue" for="thickness">0,25</output><input id="thickness" type="range" min="0.05" max="3" step="0.05" value="0.25"><small>Меняет вид рисунка, а не порядок намотки.</small></div>
+            <details class="import-details">
+              <summary>Открыть сохранённую схему<span class="chevron" aria-hidden="true"></span></summary>
+              <div id="sequencePanel" class="import-body">
+                <p class="muted small">Вставьте номера гвоздей, проект JSON или инструкцию TXT целиком.</p>
+                <label class="field-title" for="sequenceInput">Последовательность гвоздей</label>
+                <textarea id="sequenceInput" rows="5" spellcheck="false" placeholder="Например: 0, 84, 167, 42, 210…"></textarea>
+                <div id="seqError" class="error" role="alert"></div>
+                <label class="field-title" for="seqOrigin">Где находится гвоздь 0</label>
+                <select id="seqOrigin"><option value="right">Справа · на 3 часах</option><option value="top">Сверху · на 12 часах</option></select>
+                <div class="range-field"><label for="seqPins">Гвоздей в сохранённой схеме</label><output id="seqPinsValue" for="seqPins">288</output><input id="seqPins" type="range" min="50" max="800" step="1" value="288"></div>
+                <div class="range-field"><label for="seqThickness">Толщина линий на экране</label><output id="seqThicknessValue" for="seqThickness">0,25</output><input id="seqThickness" type="range" min="0.05" max="3" step="0.05" value="0.25"></div>
+                <button id="visualizeBtn" class="button secondary full" type="button">Показать схему</button>
+              </div>
+            </details>
+          </div>
+        </details>
+        <button id="generateBtn" class="button primary full generate-button" type="button" disabled><svg class="icon"><use href="#icon-spark"/></svg><span data-label>Создать портрет</span></button>
+      </div>
+      <button id="cancelBtn" class="button danger full" type="button" hidden>Отменить расчёт</button>
+      <progress id="progress" max="100" value="0" hidden aria-label="Ход создания портрета"></progress>
+      <div id="status" class="status" role="status" aria-live="polite">Загрузите фотографию, чтобы начать.</div>
+      <button id="resetBtn" class="text-button reset-button" type="button">Начать заново</button>
+    </div>
+
+    <div class="panel preview-panel">
+      <div class="panel-heading"><span class="step-badge">2</span><div><h2>Ваш портрет</h2><p>Посмотрите результат и сохраните схему</p></div></div>
+      <div class="canvas-wrap">
+        <canvas id="resultCanvas" width="1000" height="1000" aria-label="Портрет из нитей"></canvas>
+        <div id="previewEmpty" class="preview-empty">
+          <svg class="empty-art" viewBox="0 0 240 240" fill="none" aria-hidden="true"><circle cx="120" cy="120" r="98" fill="#f3f6ef" stroke="#d0dfd3" stroke-width="1"/><g stroke="#8aaf99" stroke-width=".65" opacity=".7"><path d="m120 22 84 148L35 169 120 22l63 23L29 84l175 86L64 201 183 45 35 169l174-93-89 142L29 84l154-39L64 201 211 123 48 55l72 163 63-173L22 120l189 3L48 55l72 163 84-48L35 169l148-124L64 201 211 123l-91-101L22 120l161-75-63 173L48 55l156 115L29 84l91 134L35 169l176-46L64 201 183 45l-63-23L29 84l175 86L48 55l72 163L22 120l189 3L120 22 64 201l119-156L35 169l85 49"/></g><circle cx="120" cy="120" r="52" fill="#fafbf7"/><path d="m120 98 5.5 16.5L142 120l-16.5 5.5L120 142l-5.5-16.5L98 120l16.5-5.5L120 98Z" stroke="#4c8a6c" stroke-width="1.5"/><g fill="#6d967a"><circle cx="120" cy="22" r="2"/><circle cx="183" cy="45" r="2"/><circle cx="211" cy="123" r="2"/><circle cx="204" cy="170" r="2"/><circle cx="120" cy="218" r="2"/><circle cx="64" cy="201" r="2"/><circle cx="35" cy="169" r="2"/><circle cx="29" cy="84" r="2"/><circle cx="48" cy="55" r="2"/></g></svg>
+          <h3>Здесь появится ваша картина</h3>
+          <p>Выберите любимое фото<br>и нажмите «Создать портрет».</p>
+        </div>
+      </div>
+      <p id="previewMeta" class="preview-meta"></p>
+      <div id="resultActions" class="result-actions" hidden aria-label="Сохранить портрет и начать работу">
+        <div class="primary-downloads"><button id="downloadBtn" class="button primary" type="button" disabled><svg class="icon"><use href="#icon-download"/></svg>Скачать портрет</button><button id="txtBtn" class="button secondary" type="button" disabled>Скачать инструкцию</button></div>
+        <div class="result-tools"><button id="interactiveBtn" class="button quiet" type="button" disabled><svg class="icon"><use href="#icon-play"/></svg><span data-label>Начать намотку</span></button><button id="lighterBtn" class="button quiet" type="button" disabled><svg class="icon"><use href="#icon-sun"/></svg>Светлее</button></div>
+        <details class="export-details"><summary>Другие форматы<span class="chevron" aria-hidden="true"></span></summary><div><button id="svgBtn" class="button compact" type="button" disabled>Векторный рисунок · SVG</button><button id="jsonBtn" class="button compact" type="button" disabled>Сохранить проект · JSON</button></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section page-width" id="how-it-works" aria-labelledby="howTitle">
+    <div class="section-heading"><p class="eyebrow">ОТ ФОТОГРАФИИ К КАРТИНЕ</p><h2 id="howTitle">Творить проще, чем кажется</h2></div>
+    <ol class="steps-grid"><li><span class="mini-step">01</span><h3>Выберите фото</h3><p>Крупный портрет с лицом по центру. Для рисунка используется центральный квадрат фотографии.</p></li><li><span class="mini-step">02</span><h3>Создайте портрет</h3><p>Генератор подберёт линии между гвоздями. Оцените рисунок и скачайте инструкцию.</p></li><li><span class="mini-step">03</span><h3>Соединяйте по номерам</h3><p>Закрепите нить на первом гвозде. Следуйте инструкции или подсказкам в режиме намотки.</p></li></ol>
+  </section>
+  <section class="faq-section page-width" aria-labelledby="faqTitle">
+    <h2 id="faqTitle">Немного полезного</h2>
+    <details><summary>Как сделать портрет светлее?<span class="chevron" aria-hidden="true"></span></summary><p>Кнопка «Светлее» делает линии на экране тоньше, сохраняя порядок намотки. Чтобы уменьшить количество нитей в самой схеме, измените число линий в разделе «Дополнительно». Результат на основе также зависит от толщины настоящей нити.</p></details>
+    <details><summary>Что нужно для создания картины?<span class="chevron" aria-hidden="true"></span></summary><p>Круглая основа с пронумерованными гвоздями и нить. Число гвоздей на основе должно совпадать с настройками схемы. По умолчанию их 288, гвоздь 0 находится справа, нумерация идёт по часовой стрелке. Шаблон основы в натуральную величину в генератор не входит.</p></details>
+    <details><summary>Как вернуться к своей схеме позже?<span class="chevron" aria-hidden="true"></span></summary><p>Скачайте инструкцию или сохраните проект в разделе «Другие форматы». В следующий раз вставьте содержимое файла в «Дополнительно» → «Открыть сохранённую схему». После закрытия страницы фотография не сохраняется.</p></details>
+  </section>
+</main>
+<footer class="site-footer page-width"><div class="footer-brand"><svg class="logo"><use href="#logo"/></svg><span>Стринг-арт<br><small>Картины, созданные вами</small></span></div><button id="privacyBtn" class="text-button" type="button">О ваших фотографиях</button></footer>
+
+<dialog id="playerDialog" class="player-dialog" aria-labelledby="playerTitle">
+  <div class="dialog-header"><div><p class="eyebrow">ШАГ ЗА ШАГОМ</p><h2 id="playerTitle">Намотка по номерам</h2><p class="muted small">Соединяйте гвозди в указанном порядке.</p></div><button id="closePlayer" class="close-button" type="button" aria-label="Закрыть подсказки для намотки">×</button></div>
+  <div class="player-layout"><div class="player-art"><canvas id="playerCanvas" width="600" height="600" aria-label="Текущий шаг намотки"></canvas></div><div class="player-controls">
+    <div class="pin-connection"><div><span>От гвоздя</span><strong id="pinFrom">0</strong></div><span class="connection-arrow" aria-hidden="true">→</span><div><span>К гвоздю</span><strong id="pinTo">0</strong></div></div>
+    <p id="stepValue" class="step-value">Шаг 0 из 0</p><input id="stepSlider" type="range" min="0" max="1" value="0" aria-label="Шаг намотки">
+    <div class="playback-buttons"><button id="previousStep" class="button secondary" type="button" aria-label="Предыдущий шаг">←</button><button id="playPause" class="button primary" type="button">Пуск</button><button id="nextStep" class="button secondary" type="button" aria-label="Следующий шаг">→</button></div>
+    <label class="field-title" for="speed">Скорость показа</label><input id="speed" type="range" min="1" max="20" value="4">
+    <button id="restartPlayer" class="button quiet full" type="button">Вернуться к началу</button>
+    <details class="player-sequence-details"><summary>Вся последовательность<span class="chevron" aria-hidden="true"></span></summary><label class="field-title sr-only" for="playerSequence">Последовательность гвоздей</label><textarea id="playerSequence" readonly rows="4" spellcheck="false"></textarea><button id="copySequence" class="button secondary full" type="button">Скопировать последовательность</button></details>
+  </div></div>
+</dialog>
+<dialog id="privacyDialog" class="privacy-dialog" aria-labelledby="privacyTitle"><div class="dialog-header"><h2 id="privacyTitle">Ваше фото остаётся у вас</h2><button id="closePrivacy" class="close-button" type="button" aria-label="Закрыть информацию о фотографиях">×</button></div><p>Генератор обрабатывает фотографию и рассчитывает схему на вашем устройстве. Фотографии не отправляются на сервер для обработки.</p><p>Сохраните готовую схему перед закрытием страницы. Отдельный HTML-файл работает и без интернета. Для размещённой в интернете версии действуют правила платформы, на которой находится сайт.</p></dialog>
+
+<script id="workerSource" type="text/plain">
+/* Portrait variant: weighted mean gain, signed residual and central detail priority.
+ * A local direction tensor reduces repeated parallel threads across the face.
+ * More crossing threads can add background texture; residual image gain must
+ * still be positive. This reduces banding without promising its elimination.
+ * The center ellipse is a composition prior; it does not detect faces.
+ * Independent implementation of a circular, continuous-thread greedy solver.
+ * Classic script: usable with importScripts() and directly in Node for checks.
+ * Coordinates are pixels; darkness is an array of values in the range 0..255.
+ */
+(function (scope) {
+  'use strict';
+
+  const CACHE_BUDGET = 60 * 1024 * 1024;
+  const MIN_PIN_GAP = 5;
+  const RECENT_COUNT = 20;
+  const THREAD_DARKNESS = 12;
+  const WHITE_BACKGROUND_LIMIT = 25;
+  const MIN_WHITE_BACKGROUND_FRACTION = 0.01;
+  const BACKGROUND_COST = 1.7;
+  // A faint target in a narrow outer ring adds just a few intentional
+  // background crossings, while keeping the main portrait dominant.
+  const BACKGROUND_THREAD_TARGET = 24;
+  const BACKGROUND_RING_INNER_FRACTION = 0.90;
+  const BACKGROUND_RING_OUTER_FRACTION = 0.995;
+  // One byte mask plus a bounded four-byte flood queue at the 500px work size.
+  const BACKGROUND_WORKING_BYTES = 500 * 500 * 5;
+  const DIRECTION_CELL_SIZE = 20;
+  const DIRECTION_STRENGTH = 100;
+  const ORIGINAL_DIRECTION_STRENGTH = 65;
+  const DIRECTION_PRIOR = 60;
+  const DIRECTION_COLUMNS = 500 / DIRECTION_CELL_SIZE;
+  const directionImportance = new Float64Array(DIRECTION_COLUMNS * DIRECTION_COLUMNS);
+  for (let cell = 0; cell < directionImportance.length; cell++) {
+    const x = ((cell % DIRECTION_COLUMNS + 0.5) * DIRECTION_CELL_SIZE / 500 - 0.52) / 0.25;
+    const y = ((Math.floor(cell / DIRECTION_COLUMNS) + 0.5) * DIRECTION_CELL_SIZE / 500 - 0.58) / 0.32;
+    directionImportance[cell] = 1 + 30 * Math.exp(-x * x - y * y);
+  }
+  let savedGeometry = null;
+
+  // The inverse index stores each pixel's contributing chords. Only one
+  // geometry is retained, and its size is checked before any large allocation.
+  function incrementalGeometry(pins, size) {
+    const count = pins.length;
+    const signature = size + ':' + pins.map(p => p.x + ',' + p.y).join(';');
+    if (savedGeometry && savedGeometry.signature === signature) return savedGeometry;
+    savedGeometry = null;
+    // With very few pins a direct lazy search costs less than building the
+    // inverse pixel index, even on its first run.
+    if (count < 128) return null;
+    const endpoints = [];
+    let references = 0, maximumCellReferences = 0;
+    for (let first = 0; first < count; first++) {
+      for (let last = first + 1; last < count; last++) {
+        const distance = Math.min(last - first, count - (last - first));
+        if (distance < MIN_PIN_GAP) continue;
+        const length = Math.max(1, Math.floor(Math.hypot(pins[last].x - pins[first].x, pins[last].y - pins[first].y)));
+        endpoints.push(first, last, length);
+        references += length;
+        maximumCellReferences += Math.abs(Math.floor(pins[last].x / DIRECTION_CELL_SIZE) - Math.floor(pins[first].x / DIRECTION_CELL_SIZE)) +
+          Math.abs(Math.floor(pins[last].y / DIRECTION_CELL_SIZE) - Math.floor(pins[first].y / DIRECTION_CELL_SIZE)) + 1;
+      }
+    }
+    const chordCount = endpoints.length / 3;
+    const IdArray = chordCount <= 65536 ? Uint16Array : Uint32Array;
+    const bytes = references * IdArray.BYTES_PER_ELEMENT + (size * size + 1) * 12 + count * count * 4 + endpoints.length * 8 +
+      maximumCellReferences * 8 + (chordCount + 1) * 20 +
+      BACKGROUND_WORKING_BYTES + directionImportance.length * 26;
+    if (bytes > CACHE_BUDGET) return null;
+    const perPixel = new Uint32Array(size * size);
+    const pairToChord = new Int32Array(count * count).fill(-1);
+    const cellOffsets = new Uint32Array(chordCount + 1);
+    let cellReferences = 0;
+    for (let chord = 0; chord < chordCount; chord++) {
+      const first = endpoints[chord * 3], last = endpoints[chord * 3 + 1];
+      const a = pins[first], b = pins[last], length = endpoints[chord * 3 + 2];
+      pairToChord[first * count + last] = pairToChord[last * count + first] = chord;
+      if (length === 1) { perPixel[a.y * size + a.x]++; cellOffsets[chord + 1] = ++cellReferences; continue; }
+      const denominator = length - 1;
+      let numeratorX = a.x * denominator, numeratorY = a.y * denominator;
+      const dx = b.x - a.x, dy = b.y - a.y;
+      let previousCell = -1;
+      for (let sample = 0; sample < length; sample++) {
+        const x = Math.floor(numeratorX / denominator), y = Math.floor(numeratorY / denominator);
+        perPixel[y * size + x]++;
+        const cell = Math.floor(x / DIRECTION_CELL_SIZE) + DIRECTION_COLUMNS * Math.floor(y / DIRECTION_CELL_SIZE);
+        if (cell !== previousCell) { cellReferences++; previousCell = cell; }
+        numeratorX += dx; numeratorY += dy;
+      }
+      cellOffsets[chord + 1] = cellReferences;
+    }
+    const offsets = new Uint32Array(size * size + 1);
+    for (let pixel = 0; pixel < perPixel.length; pixel++) offsets[pixel + 1] = offsets[pixel] + perPixel[pixel];
+    const chordIds = new IdArray(references);
+    const cursor = offsets.slice(0, -1);
+    const cellIds = new Uint16Array(cellReferences);
+    const cellCounts = new Uint16Array(cellReferences);
+    const cellWeights = new Float32Array(cellReferences);
+    const directionCos = new Float64Array(chordCount), directionSin = new Float64Array(chordCount);
+    for (let chord = 0; chord < chordCount; chord++) {
+      const a = pins[endpoints[chord * 3]], b = pins[endpoints[chord * 3 + 1]], length = endpoints[chord * 3 + 2];
+      if (length === 1) {
+        chordIds[cursor[a.y * size + a.x]++] = chord;
+        const cell = Math.floor(a.x / DIRECTION_CELL_SIZE) + DIRECTION_COLUMNS * Math.floor(a.y / DIRECTION_CELL_SIZE);
+        cellIds[cellOffsets[chord]] = cell; cellCounts[cellOffsets[chord]] = 1;
+        cellWeights[cellOffsets[chord]] = directionImportance[cell];
+        const dx = b.x - a.x, dy = b.y - a.y, squared = dx * dx + dy * dy;
+        directionCos[chord] = squared ? (dx * dx - dy * dy) / squared : 0;
+        directionSin[chord] = squared ? 2 * dx * dy / squared : 0;
+        continue;
+      }
+      const denominator = length - 1;
+      let numeratorX = a.x * denominator, numeratorY = a.y * denominator;
+      const dx = b.x - a.x, dy = b.y - a.y;
+      const lengthSquared = dx * dx + dy * dy;
+      directionCos[chord] = (dx * dx - dy * dy) / lengthSquared;
+      directionSin[chord] = 2 * dx * dy / lengthSquared;
+      let previousCell = -1, cellCursor = cellOffsets[chord] - 1;
+      for (let sample = 0; sample < length; sample++) {
+        const x = Math.floor(numeratorX / denominator), y = Math.floor(numeratorY / denominator);
+        chordIds[cursor[y * size + x]++] = chord;
+        const cell = Math.floor(x / DIRECTION_CELL_SIZE) + DIRECTION_COLUMNS * Math.floor(y / DIRECTION_CELL_SIZE);
+        if (cell !== previousCell) { cellIds[++cellCursor] = cell; previousCell = cell; }
+        cellCounts[cellCursor]++;
+        numeratorX += dx; numeratorY += dy;
+      }
+      for (let entry = cellOffsets[chord]; entry < cellOffsets[chord + 1]; entry++) {
+        cellWeights[entry] = cellCounts[entry] * directionImportance[cellIds[entry]];
+      }
+    }
+    savedGeometry = { signature, offsets, chordIds, pairToChord, chordCount,
+      cellOffsets, cellIds, cellCounts, cellWeights, directionCos, directionSin };
+    return savedGeometry;
+  }
+
+  function getPins(count, size = 500) {
+    if (!Number.isInteger(count) || count < 50 || count > 800) {
+      throw new RangeError('Pin count must be an integer between 50 and 800.');
+    }
+    if (!Number.isInteger(size) || size !== 500) {
+      throw new RangeError('Portrait calculation size must be 500.');
+    }
+    const center = size / 2;
+    const radius = center - 0.5;
+    return Array.from({ length: count }, (_, index) => {
+      const angle = 2 * Math.PI * index / count;
+      return {
+        x: Math.floor(center + radius * Math.cos(angle)),
+        y: Math.floor(center + radius * Math.sin(angle))
+      };
+    });
+  }
+
+  // Include both ends and retain repeated pixel samples: these contribute to
+  // the chord's score. Repeated samples are subtracted only once when drawn.
+  function trace(first, last, size = 500) {
+    const steps = Math.floor(Math.hypot(last.x - first.x, last.y - first.y));
+    if (steps <= 1) return Uint32Array.of(first.y * size + first.x);
+    const pixels = new Uint32Array(steps);
+    const denominator = steps - 1;
+    let numeratorX = first.x * denominator, numeratorY = first.y * denominator;
+    const dx = last.x - first.x, dy = last.y - first.y;
+    for (let index = 0; index < steps; index++) {
+      const x = Math.floor(numeratorX / denominator), y = Math.floor(numeratorY / denominator);
+      pixels[index] = y * size + x;
+      numeratorX += dx; numeratorY += dy;
+    }
+    return pixels;
+  }
+
+  // Only protect nearly-white regions connected to the image border. This
+  // leaves enclosed highlights alone and does not assume a face or skin color.
+  function whiteBackground(input, size) {
+    const mask = new Uint8Array(input.length);
+    const queue = new Uint32Array(input.length);
+    let head = 0, tail = 0;
+    function add(pixel) {
+      if (!mask[pixel] && input[pixel] <= WHITE_BACKGROUND_LIMIT) {
+        mask[pixel] = 1;
+        queue[tail++] = pixel;
+      }
+    }
+    for (let index = 0; index < size; index++) {
+      add(index); add((size - 1) * size + index);
+      add(index * size); add(index * size + size - 1);
+    }
+    while (head < tail) {
+      const pixel = queue[head++], x = pixel % size;
+      if (x > 0) add(pixel - 1);
+      if (x < size - 1) add(pixel + 1);
+      if (pixel >= size) add(pixel - size);
+      if (pixel < size * (size - 1)) add(pixel + size);
+    }
+    return mask;
+  }
+
+  function generate(options, onProgress) {
+    const size = options.size === undefined ? 500 : options.size;
+    const pinCoordinates = Array.isArray(options.pins)
+      ? options.pins.map(pin => ({ x: pin.x, y: pin.y }))
+      : getPins(options.pins === undefined ? 288 : options.pins, size);
+    const pinCount = pinCoordinates.length;
+    const requestedLines = options.lines === undefined ? 3000 : options.lines;
+    const exactCount = options.mode === 'exact';
+    if (!Number.isInteger(size) || size !== 500) {
+      throw new RangeError('Invalid calculation size.');
+    }
+    if (pinCount < 50 || pinCount > 800 || pinCoordinates.some(pin =>
+      !Number.isInteger(pin.x) || !Number.isInteger(pin.y) ||
+      pin.x < 0 || pin.x >= size || pin.y < 0 || pin.y >= size)) {
+      throw new RangeError('Invalid pin coordinates.');
+    }
+    if (!Number.isInteger(requestedLines) || requestedLines < 0 || requestedLines > 20000) {
+      throw new RangeError('Line count must be an integer between 0 and 20000.');
+    }
+    const input = options.darkness;
+    if (!input || input.length !== size * size) {
+      throw new RangeError('Darkness data must contain one value per pixel.');
+    }
+    const residual = new Float64Array(input.length);
+    const weights = new Float32Array(input.length);
+    let hasDarkness = false;
+    for (let index = 0; index < input.length; index++) {
+      const value = input[index];
+      if (!Number.isFinite(value)) throw new TypeError('Invalid darkness value.');
+      residual[index] = Math.max(0, Math.min(255, Math.floor(value)));
+      if (residual[index] !== 0) hasDarkness = true;
+      const x = (index % size / size - 0.53) / 0.20;
+      const y = (Math.floor(index / size) / size - 0.60) / 0.25;
+      weights[index] = 1 + 30 * Math.exp(-x * x - y * y);
+    }
+
+    const sequence = [0];
+    let lastReported = 0;
+    const report = () => {
+      if (typeof onProgress === 'function') {
+        const done = sequence.length - 1;
+        onProgress({ done, total: requestedLines, startLine: lastReported, segment: sequence.slice(lastReported) });
+        lastReported = done;
+      }
+    };
+    const result = reason => ({
+      sequence,
+      pins: pinCoordinates,
+      size,
+      actualLines: sequence.length - 1,
+      stopReason: reason
+    });
+    if (!hasDarkness || requestedLines === 0) {
+      report();
+      return result(hasDarkness ? 'complete' : 'blank');
+    }
+
+    const background = whiteBackground(input, size);
+    // Enable the gentle correction only for a substantial light background
+    // inside the actual circular drawing. White corners outside it do not count.
+    // Other photographs retain the original detail-preserving route calculation.
+    const center = size / 2, radiusSquared = (center - 0.5) ** 2;
+    let circlePixels = 0, whitePixels = 0;
+    for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+      if ((x - center) ** 2 + (y - center) ** 2 <= radiusSquared) {
+        circlePixels++;
+        whitePixels += background[y * size + x];
+      }
+    }
+    const lightBackground = whitePixels >= circlePixels * MIN_WHITE_BACKGROUND_FRACTION;
+    if (!lightBackground) background.fill(0);
+    const directionStrength = lightBackground ? DIRECTION_STRENGTH : ORIGINAL_DIRECTION_STRENGTH;
+    // Give a restrained outer band of border-connected white pixels a moderate target.
+    // This makes the solver choose occasional chords that cross the white
+    // surround, while the flood-fill mask protects enclosed facial highlights.
+    // Facial contrast remains prioritized by the existing center/detail weights.
+    if (lightBackground) {
+      const innerRadius = (center - 0.5) * BACKGROUND_RING_INNER_FRACTION;
+      const outerRadius = (center - 0.5) * BACKGROUND_RING_OUTER_FRACTION;
+      const innerSquared = innerRadius * innerRadius, outerSquared = outerRadius * outerRadius;
+      for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+        const dx = x - center, dy = y - center, distanceSquared = dx * dx + dy * dy;
+        const pixel = y * size + x;
+        if (background[pixel] && distanceSquared >= innerSquared && distanceSquared <= outerSquared) {
+          residual[pixel] = Math.max(residual[pixel], BACKGROUND_THREAD_TARGET);
+        }
+      }
+    }
+    // Keep the original score normalization and positive detail priorities.
+    // The white background gets a 1.5x cost for deposited ink. The half-step
+    // offset makes the first stroke use that same cost, rather than reducing
+    // the weight of facial details on chords that also cross the background.
+    for (let pixel = 0; pixel < residual.length; pixel++) {
+      if (background[pixel]) residual[pixel] -= THREAD_DARKNESS * (BACKGROUND_COST - 1) / 2;
+    }
+
+    // A doubled-angle tensor records the preferred thread direction locally.
+    // Its nonnegative penalty encourages crossing in crowded areas. It never
+    // rewards a connection that would worsen the photograph's residual error.
+
+    // Protect high-contrast features while discouraging bundles in smooth midtones.
+    // This is a local tone statistic, not a face detector or a fixed facial mask.
+    const directionScale = new Float64Array(directionImportance.length);
+    const cellPixels = new Uint16Array(directionImportance.length);
+    const cellSums = new Float64Array(directionImportance.length);
+    const cellSquares = new Float64Array(directionImportance.length);
+    for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) {
+      const cell = Math.floor(x / DIRECTION_CELL_SIZE) + DIRECTION_COLUMNS * Math.floor(y / DIRECTION_CELL_SIZE);
+      const value = residual[y * size + x];
+      cellPixels[cell]++; cellSums[cell] += value; cellSquares[cell] += value * value;
+    }
+    for (let cell = 0; cell < directionScale.length; cell++) {
+      const mean = cellSums[cell] / cellPixels[cell];
+      const deviation = Math.sqrt(Math.max(0, cellSquares[cell] / cellPixels[cell] - mean * mean));
+      directionScale[cell] = lightBackground
+        ? Math.max(0.15, Math.exp(-(((mean - 100) / 85) ** 2)) / (1 + (deviation / 22) ** 2))
+        : 1;
+    }
+
+    const localCos = new Float64Array(directionImportance.length);
+    const localSin = new Float64Array(directionImportance.length);
+    const localMass = new Float64Array(directionImportance.length);
+    function directionPenalty(cells, cellWeights, start, end, cosine, sine) {
+      let penalty = 0, total = 0;
+      for (let entry = start; entry < end; entry++) {
+        const cell = cells[entry], weight = cellWeights[entry];
+        const alignment = Math.max(0, (localCos[cell] * cosine + localSin[cell] * sine) / (localMass[cell] + DIRECTION_PRIOR));
+        penalty += weight * alignment * directionScale[cell]; total += weight;
+      }
+      return total > 0 ? directionStrength * penalty / total : 0;
+    }
+    function recordDirection(cells, counts, start, end, cosine, sine) {
+      for (let entry = start; entry < end; entry++) {
+        const cell = cells[entry], amount = counts[entry];
+        localMass[cell] += amount; localCos[cell] += amount * cosine; localSin[cell] += amount * sine;
+      }
+    }
+
+    const geometry = incrementalGeometry(pinCoordinates, size);
+    if (geometry) {
+      const { offsets, chordIds, pairToChord, chordCount, cellOffsets, cellIds, cellCounts, cellWeights, directionCos, directionSin } = geometry;
+      const scores = new Float64Array(chordCount);
+      const norms = new Float64Array(chordCount);
+      for (let pixel = 0; pixel < residual.length; pixel++) {
+        const weight = weights[pixel];
+        const value = residual[pixel] * weight;
+        for (let q = offsets[pixel]; q < offsets[pixel + 1]; q++) {
+          const chord = chordIds[q];
+          scores[chord] += value;
+          norms[chord] += weight;
+        }
+      }
+      const recent = new Uint16Array(RECENT_COUNT);
+      const forbidden = new Uint8Array(pinCount);
+      let recentLength = 0, recentPosition = 0, current = 0;
+      report();
+      for (let step = 0; step < requestedLines; step++) {
+        let bestPin = -1, bestScore = -Infinity;
+        const row = current * pinCount;
+        for (let offset = MIN_PIN_GAP; offset < pinCount - MIN_PIN_GAP; offset++) {
+          const candidate = (current + offset) % pinCount;
+          if (forbidden[candidate]) continue;
+          const chord = pairToChord[row + candidate];
+          const rawScore = (scores[chord] - THREAD_DARKNESS * norms[chord] / 2) / norms[chord];
+          if ((!exactCount && rawScore <= 0) || rawScore <= bestScore) continue;
+          const score = rawScore - directionPenalty(cellIds, cellWeights, cellOffsets[chord], cellOffsets[chord + 1], directionCos[chord], directionSin[chord]);
+          if (score > bestScore) { bestScore = score; bestPin = candidate; }
+        }
+        if (bestPin < 0) { report(); return result('no-improvement'); }
+        const first = Math.min(current, bestPin), last = Math.max(current, bestPin);
+        const selectedChord = pairToChord[row + bestPin];
+        recordDirection(cellIds, cellCounts, cellOffsets[selectedChord], cellOffsets[selectedChord + 1], directionCos[selectedChord], directionSin[selectedChord]);
+        const path = trace(pinCoordinates[first], pinCoordinates[last], size);
+        let previousPixel = -1;
+        for (let sample = 0; sample < path.length; sample++) {
+          const pixel = path[sample];
+          if (pixel === previousPixel) continue;
+          previousPixel = pixel;
+          const appliedInk = THREAD_DARKNESS * (background[pixel] ? BACKGROUND_COST : 1);
+          residual[pixel] -= appliedInk;
+          const delta = appliedInk * weights[pixel];
+          for (let q = offsets[pixel]; q < offsets[pixel + 1]; q++) scores[chordIds[q]] -= delta;
+        }
+        sequence.push(bestPin);
+        if (recentLength === RECENT_COUNT) forbidden[recent[recentPosition]] = 0;
+        else recentLength++;
+        recent[recentPosition] = bestPin;
+        recentPosition = (recentPosition + 1) % RECENT_COUNT;
+        forbidden[bestPin] = 1;
+        current = bestPin;
+        if ((step + 1) % 128 === 0 || step + 1 === requestedLines) report();
+      }
+      return result('complete');
+    }
+
+    // FIFO keeps the pixel cache bounded even at 800 pins. Entries are shared
+    // by both directions; an allowance covers each entry's JS bookkeeping.
+    const lineCache = new Map();
+    const evictionQueue = new Uint32Array(Math.max(1, pinCount * (pinCount - 1) / 2));
+    let evictionHead = 0, evictionCount = 0;
+    let cacheBytes = 0;
+    // Reserve space for the score tables, heap entries, residuals and tensors;
+    // the remaining budget covers pixel paths and their compact cell records.
+    const lineCacheBudget = Math.max(0, CACHE_BUDGET - pinCount * pinCount * 28 - evictionQueue.byteLength -
+      residual.byteLength - weights.byteLength - directionImportance.byteLength * 4 -
+      BACKGROUND_WORKING_BYTES - directionScale.byteLength - cellPixels.byteLength - cellSums.byteLength - cellSquares.byteLength);
+    function lineFor(start, end) {
+      const low = Math.min(start, end);
+      const high = Math.max(start, end);
+      const key = low * pinCount + high;
+      const saved = lineCache.get(key);
+      if (saved !== undefined) return saved;
+      const line = trace(pinCoordinates[low], pinCoordinates[high], size);
+      const cells = [], counts = [];
+      let previousCell = -1;
+      for (let sample = 0; sample < line.length; sample++) {
+        const pixel = line[sample];
+        const cell = Math.floor(pixel % size / DIRECTION_CELL_SIZE) + DIRECTION_COLUMNS * Math.floor(Math.floor(pixel / size) / DIRECTION_CELL_SIZE);
+        if (cell !== previousCell) { cells.push(cell); counts.push(1); previousCell = cell; }
+        else counts[counts.length - 1]++;
+      }
+      const cellIds = Uint16Array.from(cells), cellCounts = Uint16Array.from(counts);
+      const cellWeights = Float32Array.from(cells, (cell, index) => counts[index] * directionImportance[cell]);
+      const dx = pinCoordinates[high].x - pinCoordinates[low].x, dy = pinCoordinates[high].y - pinCoordinates[low].y;
+      const squared = dx * dx + dy * dy;
+      const record = { pixels: line, cellIds, cellCounts, cellWeights,
+        cosine: squared ? (dx * dx - dy * dy) / squared : 0, sine: squared ? 2 * dx * dy / squared : 0 };
+      const cost = record.cost = line.byteLength + cellIds.byteLength + cellCounts.byteLength + cellWeights.byteLength + 640;
+      while (cacheBytes + cost > lineCacheBudget && lineCache.size > 0) {
+        const oldestKey = evictionQueue[evictionHead];
+        evictionHead = (evictionHead + 1) % evictionQueue.length;
+        evictionCount--;
+        cacheBytes -= lineCache.get(oldestKey).cost;
+        lineCache.delete(oldestKey);
+      }
+      if (cost <= lineCacheBudget) {
+        lineCache.set(key, record);
+        evictionQueue[(evictionHead + evictionCount) % evictionQueue.length] = key;
+        evictionCount++;
+        cacheBytes += cost;
+      }
+      return record;
+    }
+
+    const recent = new Uint16Array(RECENT_COUNT);
+    const forbidden = new Uint8Array(pinCount);
+    // Raw image gains only decrease and remain upper bounds on the penalized
+    // gains. The directional penalty itself can decrease after a crossing, so
+    // it must never be cached as a bound. Evaluated entries are held aside for
+    // the current step and restored after choosing the best actual score.
+    const queueBounds = new Float64Array(pinCount * pinCount);
+    const chordScores = new Float64Array(pinCount * pinCount).fill(Infinity);
+    const chordRevisions = new Int32Array(pinCount * pinCount).fill(-1);
+    const queues = new Array(pinCount);
+
+    function queueFor(pin) {
+      let queue = queues[pin];
+      if (queue) return queue;
+      const row = pin * pinCount;
+      const entries = [];
+      for (let offset = MIN_PIN_GAP; offset < pinCount - MIN_PIN_GAP; offset++) {
+        const next = (pin + offset) % pinCount;
+        const first = pinCoordinates[pin], last = pinCoordinates[next];
+        queueBounds[row + next] = 255 - THREAD_DARKNESS / 2;
+        entries.push(next);
+      }
+      function higher(a, b) {
+        const difference = queueBounds[row + a] - queueBounds[row + b];
+        return difference > 0 || difference === 0 && (a - pin + pinCount) % pinCount < (b - pin + pinCount) % pinCount;
+      }
+      function down(position) {
+        const value = entries[position];
+        const length = entries.length;
+        while (position * 2 + 1 < length) {
+          let child = position * 2 + 1;
+          if (child + 1 < length && higher(entries[child + 1], entries[child])) child++;
+          if (!higher(entries[child], value)) break;
+          entries[position] = entries[child];
+          position = child;
+        }
+        entries[position] = value;
+      }
+      for (let index = (entries.length >> 1) - 1; index >= 0; index--) down(index);
+      queue = {
+        entries, down,
+        pop() {
+          const first = entries[0];
+          const last = entries.pop();
+          if (entries.length) { entries[0] = last; down(0); }
+          return first;
+        },
+        push(value) {
+          let position = entries.length;
+          entries.push(value);
+          while (position > 0) {
+            const parent = (position - 1) >> 1;
+            if (!higher(value, entries[parent])) break;
+            entries[position] = entries[parent];
+            position = parent;
+          }
+          entries[position] = value;
+        }
+      };
+      queues[pin] = queue;
+      return queue;
+    }
+
+    let recentLength = 0;
+    let recentPosition = 0;
+    let current = 0;
+    report();
+    for (let step = 0; step < requestedLines; step++) {
+      let bestPin = -1, bestScore = -Infinity, bestOffset = Infinity;
+      let bestPath;
+      const queue = queueFor(current);
+      const temporarilyBlocked = [];
+      const row = current * pinCount;
+      while (queue.entries.length) {
+        const candidate = queue.entries[0];
+        if (forbidden[candidate]) { temporarilyBlocked.push(queue.pop()); continue; }
+        if ((!exactCount && queueBounds[row + candidate] <= 0) || queueBounds[row + candidate] < bestScore) break;
+        const pair = Math.min(current, candidate) * pinCount + Math.max(current, candidate);
+        if (queueBounds[row + candidate] > chordScores[pair]) {
+          queueBounds[row + candidate] = chordScores[pair];
+          queue.down(0);
+          continue;
+        }
+        if (chordRevisions[pair] === step) {
+          const record = lineFor(current, candidate);
+          const score = chordScores[pair] - directionPenalty(record.cellIds, record.cellWeights, 0, record.cellIds.length, record.cosine, record.sine);
+          const offset = (candidate - current + pinCount) % pinCount;
+          if (score > bestScore || score === bestScore && offset < bestOffset) {
+            bestPin = candidate; bestPath = record; bestScore = score; bestOffset = offset;
+          }
+          temporarilyBlocked.push(queue.pop());
+          continue;
+        }
+        const path = lineFor(current, candidate).pixels;
+        let total = 0, norm = 0;
+        for (let index = 0; index < path.length; index++) {
+          const pixel = path[index], weight = weights[pixel];
+          total += residual[pixel] * weight;
+          norm += weight;
+        }
+        const score = (total - THREAD_DARKNESS * norm / 2) / norm;
+        chordScores[pair] = score;
+        chordRevisions[pair] = step;
+        queueBounds[row + candidate] = score;
+        queue.down(0);
+      }
+      for (let index = 0; index < temporarilyBlocked.length; index++) queue.push(temporarilyBlocked[index]);
+      if (bestPin < 0) {
+        report();
+        return result('no-improvement');
+      }
+      recordDirection(bestPath.cellIds, bestPath.cellCounts, 0, bestPath.cellIds.length, bestPath.cosine, bestPath.sine);
+      sequence.push(bestPin);
+      let previousPixel = -1;
+      for (let index = 0; index < bestPath.pixels.length; index++) {
+        const pixel = bestPath.pixels[index];
+        if (pixel !== previousPixel) {
+          const appliedInk = THREAD_DARKNESS * (background[pixel] ? BACKGROUND_COST : 1);
+          residual[pixel] -= appliedInk;
+          previousPixel = pixel;
+        }
+      }
+      if (recentLength === RECENT_COUNT) forbidden[recent[recentPosition]] = 0;
+      else recentLength++;
+      recent[recentPosition] = bestPin;
+      recentPosition = (recentPosition + 1) % RECENT_COUNT;
+      forbidden[bestPin] = 1;
+      current = bestPin;
+      if ((step + 1) % 128 === 0 || step + 1 === requestedLines) report();
+    }
+    return result('complete');
+  }
+
+  function prepare(options = {}) {
+    const size = options.size === undefined ? 500 : options.size;
+    const count = options.pins === undefined ? 288 : options.pins;
+    const pins = getPins(count, size);
+    return { cached: Boolean(incrementalGeometry(pins, size)), pins: count, size };
+  }
+
+  const api = Object.freeze({ getPins, trace, prepare, generate });
+  scope.StringArtPortraitEngine = api;
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+})(globalThis);
+
+/* Independent monochrome string renderer: paint the geometric union once.
+ * Native OffscreenCanvas is preferred; a packed supersampled mask is the
+ * fallback. Repeated threads do not repeatedly darken antialiased edges.
+ */
+(function (scope) {
+  'use strict';
+  const POPCOUNT = new Uint8Array(1024);
+  for (let value = 1; value < POPCOUNT.length; value++) POPCOUNT[value] = POPCOUNT[value >>> 1] + (value & 1);
+
+  function render(options) {
+    const { sequence, pins } = options;
+    const size = options.size === undefined ? 500 : options.size;
+    const outputSize = options.outputSize === undefined ? 1000 : options.outputSize;
+    const thickness = options.thickness === undefined ? 0.3 : options.thickness;
+    const samplesPerAxis = options.samples === undefined ? 5 : options.samples;
+    if (!Number.isFinite(size) || size <= 0 ||
+        !Number.isInteger(outputSize) || outputSize < 1 || outputSize > 1000 ||
+        !Number.isFinite(thickness) || thickness <= 0 || thickness > 3 ||
+        samplesPerAxis !== 5 && samplesPerAxis !== 10) {
+      throw new RangeError('Invalid image size or thread thickness.');
+    }
+    if (!Array.isArray(pins) || pins.length < 1 || pins.length > 800 ||
+        pins.some(p => !Number.isFinite(p.x) || !Number.isFinite(p.y) ||
+          p.x < 0 || p.y < 0 || p.x >= size || p.y >= size)) {
+      throw new RangeError('Invalid pin coordinates.');
+    }
+    if (!sequence || !Number.isInteger(sequence.length) || sequence.length < 1 || sequence.length > 20001) {
+      throw new RangeError('Invalid thread sequence.');
+    }
+    for (let i = 0; i < sequence.length; i++) {
+      if (!Number.isInteger(sequence[i]) || sequence[i] < 0 || sequence[i] >= pins.length) {
+        throw new RangeError('Sequence contains an invalid pin.');
+      }
+    }
+
+    // A single stroke paints the combined thread shape once. Separate stroke
+    // calls would repeatedly composite partially covered edge pixels and make
+    // the portrait much darker. Keep this work away from the UI thread.
+    if (typeof OffscreenCanvas === 'function' && options.samples === undefined) {
+      const canvas = new OffscreenCanvas(outputSize, outputSize);
+      const context = canvas.getContext('2d', { alpha: false, willReadFrequently: true });
+      if (context) {
+        context.fillStyle = '#fff'; context.fillRect(0, 0, outputSize, outputSize);
+        context.strokeStyle = '#000'; context.lineWidth = thickness;
+        context.lineCap = 'round'; context.lineJoin = 'round';
+        const scale = outputSize / size;
+        context.beginPath();
+        for (let i = 1; i < sequence.length; i++) {
+          const first = pins[sequence[i - 1]], last = pins[sequence[i]];
+          context.moveTo(first.x * scale, first.y * scale);
+          context.lineTo(last.x * scale, last.y * scale);
+        }
+        context.stroke();
+        return { pixels: context.getImageData(0, 0, outputSize, outputSize).data, width: outputSize, height: outputSize };
+      }
+    }
+
+    const highSize = outputSize * samplesPerAxis;
+    const scale = highSize / size;
+    const radius = thickness * samplesPerAxis / 2;
+    // 3.125 MB at 1000px / 5x, instead of a 100 MB high-resolution RGBA canvas.
+    const coverage = new Uint32Array(Math.ceil(highSize * highSize / 32));
+
+    function span(y, left, right) {
+      let from = Math.max(0, Math.ceil(left - 0.5));
+      let to = Math.min(highSize - 1, Math.ceil(right - 0.5) - 1);
+      if (from > to) return;
+      from += y * highSize;
+      to += y * highSize;
+      const firstWord = from >>> 5, lastWord = to >>> 5;
+      const startMask = 0xffffffff << (from & 31);
+      const endMask = 0xffffffff >>> (31 - (to & 31));
+      if (firstWord === lastWord) coverage[firstWord] |= startMask & endMask;
+      else {
+        coverage[firstWord] |= startMask;
+        if (lastWord > firstWord + 1) coverage.fill(0xffffffff, firstWord + 1, lastWord);
+        coverage[lastWord] |= endMask;
+      }
+    }
+
+    function circle(x, y) {
+      const firstRow = Math.max(0, Math.ceil(y - radius - 0.5));
+      const lastRow = Math.min(highSize - 1, Math.ceil(y + radius - 0.5) - 1);
+      const squared = radius * radius;
+      for (let row = firstRow; row <= lastRow; row++) {
+        const dy = row + 0.5 - y;
+        const reach = Math.sqrt(Math.max(0, squared - dy * dy));
+        span(row, x - reach, x + reach);
+      }
+    }
+
+    function stroke(a, b) {
+      if (a.y > b.y) { const swap = a; a = b; b = swap; }
+      const x1 = a.x * scale + 0.5, y1 = a.y * scale + 0.5;
+      const x2 = b.x * scale + 0.5, y2 = b.y * scale + 0.5;
+      const dx = x2 - x1, dy = y2 - y1, length = Math.hypot(dx, dy);
+      if (length === 0) { circle(x1, y1); return; }
+      if (dy === 0) {
+        const firstRow = Math.max(0, Math.ceil(y1 - radius - 0.5));
+        const lastRow = Math.min(highSize - 1, Math.ceil(y1 + radius - 0.5) - 1);
+        for (let row = firstRow; row <= lastRow; row++) span(row, Math.min(x1, x2), Math.max(x1, x2));
+      } else {
+        // Intersect the thread's rectangular body with each scanline. Away
+        // from the two short end edges this needs just a center and a width,
+        // rather than testing four polygon edges for every high-res pixel row.
+        const endHeight = Math.abs(dx) / length * radius;
+        const slope = dx / dy, halfWidth = radius * length / dy;
+        const firstRow = Math.max(0, Math.ceil(y1 - endHeight - 0.5));
+        const lastRow = Math.min(highSize - 1, Math.ceil(y2 + endHeight - 0.5) - 1);
+        for (let row = firstRow; row <= lastRow; row++) {
+          const y = row + 0.5, relativeY = y - y1;
+          const center = x1 + relativeY * slope;
+          let left = center - halfWidth, right = center + halfWidth;
+          if (dx !== 0 && (y < y1 + endHeight || y >= y2 - endHeight)) {
+            const edgeA = x1 - relativeY * dy / dx;
+            const edgeB = x1 + (length * length - relativeY * dy) / dx;
+            left = Math.max(left, Math.min(edgeA, edgeB));
+            right = Math.min(right, Math.max(edgeA, edgeB));
+          }
+          if (left < right) span(row, left, right);
+        }
+      }
+      circle(x1, y1); circle(x2, y2);
+    }
+
+    // Exact repeated edges may occur often in a winding route. A bit per pair
+    // avoids scanning those identical strokes again, in either direction.
+    const drawn = new Uint8Array(pins.length * pins.length);
+    for (let line = 1; line < sequence.length; line++) {
+      const first = Math.min(sequence[line - 1], sequence[line]);
+      const last = Math.max(sequence[line - 1], sequence[line]);
+      const key = first * pins.length + last;
+      if (drawn[key]) continue;
+      drawn[key] = 1;
+      stroke(pins[first], pins[last]);
+    }
+
+    const pixels = new Uint8ClampedArray(outputSize * outputSize * 4);
+    const sampleMask = (1 << samplesPerAxis) - 1;
+    const factor = 255 / (samplesPerAxis * samplesPerAxis);
+    for (let y = 0; y < outputSize; y++) {
+      for (let x = 0; x < outputSize; x++) {
+        let count = 0;
+        let start = y * samplesPerAxis * highSize + x * samplesPerAxis;
+        for (let subrow = 0; subrow < samplesPerAxis; subrow++) {
+          const word = start >>> 5, shift = start & 31;
+          let samples = coverage[word] >>> shift;
+          if (shift > 32 - samplesPerAxis) samples |= coverage[word + 1] << (32 - shift);
+          count += POPCOUNT[samples & sampleMask];
+          start += highSize;
+        }
+        const gray = Math.round(255 - count * factor), index = (y * outputSize + x) * 4;
+        pixels[index] = pixels[index + 1] = pixels[index + 2] = gray;
+        pixels[index + 3] = 255;
+      }
+    }
+    return { pixels, width: outputSize, height: outputSize };
+  }
+
+  const api = Object.freeze({ render });
+  scope.StringArtRenderer = api;
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+})(globalThis);
+
+self.onmessage = ({data}) => {
+  const {jobId,type,...options}=data;
+  try {
+    if(type==='render'){
+      const started=performance.now();
+      const rendered=self.StringArtRenderer.render(options);
+      self.postMessage({type:'rendered',jobId,renderMs:performance.now()-started,...rendered},[rendered.pixels.buffer]);return;
+    }
+    if(type==='prepare'){
+      self.StringArtPortraitEngine.prepare(options);
+      self.postMessage({type:'prepared',jobId});return;
+    }
+    const started=performance.now();
+    const result = self.StringArtPortraitEngine.generate(options, progress => self.postMessage({type:'progress',jobId,...progress}));
+    result.calculationMs=performance.now()-started;
+    self.postMessage({type:'done',jobId,result});
+  } catch(error) { self.postMessage({type:'error',jobId,message:error.message}); }
+};
+
+</script>
+<script>
+/* Independent implementation of the String Art Generator interface. */
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  let image = null, imageUrl = null, result = null, worker = null, job = 0, step = 0, timer = null;
+  let generating = false, imageRevision = 0, preparedDarkness = null, redrawFrame = 0;
+  let cropZoom=100,cropX=50,cropY=50;
+  let renderWorker=null,renderRevision=0,renderDelay=0,importRevision=0,pendingRoute=null;
+  // Only the current photograph's three most recent pin configurations are kept.
+  const completedRoutes = new Map();
+  const renderedImages = new Map();
+  const context = $('resultCanvas').getContext('2d');
+  const say = (_english, russian) => russian;
+  const formatNumber = value => Number(value).toLocaleString('ru-RU');
+  const status = (en, russian) => { $('status').textContent = say(en, russian || en); };
+  const number = (id,min,max) => {
+    const n = Number($(id).value);
+    if (!Number.isFinite(n) || n < min || n > max) throw new Error('Проверьте значение параметра: ' + ({pins:'количество гвоздей',lines:'количество линий',thickness:'толщина линии',seqPins:'количество гвоздей схемы',seqThickness:'толщина линии схемы'}[id] || 'настройки'));
+    return n;
+  };
+  function pinsFor(n,size=500,origin='right') {
+    const rotation=origin==='top'?-Math.PI/2:0;
+    return Array.from({length:n},(_,i)=>({x:Math.floor(size/2+(size/2-.5)*Math.cos(2*Math.PI*i/n+rotation)),y:Math.floor(size/2+(size/2-.5)*Math.sin(2*Math.PI*i/n+rotation))}));
+  }
+  function emptyCanvas() {
+    $('resultCanvas').width=1000; $('resultCanvas').height=500;
+    context.fillStyle='#fff'; context.fillRect(0,0,1000,500);
+    $('previewMeta').textContent='';$('previewEmpty').hidden=false;
+  }
+  function render(canvas, data, count=data.sequence.length-1, guide=false) {
+    const ctx=canvas.getContext('2d'), w=canvas.width, pad=guide?35:0, scale=(w-pad*2)/data.size;
+    ctx.fillStyle='#fff';ctx.fillRect(0,0,w,canvas.height);
+    ctx.save();ctx.translate(pad,pad);ctx.scale(scale,scale);
+    const fine=data.renderStyle==='fine';
+    ctx.strokeStyle='#000';ctx.lineWidth=data.thickness/(fine?3:2);ctx.lineCap='round';ctx.lineJoin='round';
+    // One stroke per thread preserves overlapping threads.
+    if(fine)ctx.beginPath();
+    for(let i=1;i<=count;i++){
+      const a=data.pins[data.sequence[i-1]],b=data.pins[data.sequence[i]];
+      if(!fine)ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);if(!fine)ctx.stroke();
+    }
+    if(fine)ctx.stroke();
+    if(guide){
+      ctx.fillStyle='#71717a';
+      data.pins.forEach(p=>{ctx.beginPath();ctx.arc(p.x,p.y,1.2,0,Math.PI*2);ctx.fill();});
+      const a=data.pins[data.sequence[Math.max(0,count-1)]], b=data.pins[data.sequence[count]];
+      if(count>0){ctx.strokeStyle='#ef4444';ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+      [a,b].forEach((p,i)=>{ctx.fillStyle=i?'#e43f43':'#168ccc';ctx.beginPath();ctx.arc(p.x,p.y,4,0,Math.PI*2);ctx.fill();});
+      ctx.font='bold 13px Arial';ctx.textAlign='center';ctx.textBaseline='middle';
+      [a,b].forEach((p,i)=>{const vx=p.x-data.size/2,vy=p.y-data.size/2,l=Math.hypot(vx,vy);ctx.fillStyle=i?'#c22':'#0673ae';ctx.fillText(String(data.sequence[i?count:Math.max(0,count-1)]),p.x+vx/l*18,p.y+vy/l*18);});
+    }
+    ctx.restore();
+  }
+  function setBusy(busy){
+    generating=busy;
+    $('generateBtn').disabled=busy||!image;
+    $('cancelBtn').hidden=!busy;
+    $('interactiveBtn').disabled=busy||!result||!!pendingRoute;
+    $('downloadBtn').disabled=busy||!result||!!pendingRoute;
+    $('progress').hidden=!busy;
+    $('uploadZone').disabled=busy;
+    ['pins','lines','thickness','seqPins','seqThickness','seqOrigin','visualizeBtn','generationMode'].forEach(id=>$(id).disabled=busy);
+    ['lighterBtn','svgBtn','txtBtn','jsonBtn'].forEach(id=>$(id).disabled=busy||!result||!!pendingRoute);
+  }
+  function cancelRendering(){renderRevision++;clearTimeout(renderDelay);if(renderWorker){renderWorker.terminate();renderWorker=null;}}
+  function stopJob(dispose=false){
+    job++;
+    cancelRendering();
+    pendingRoute=null;
+    if(worker&&(generating||dispose)){worker.terminate();worker=null;}
+    setBusy(false);
+  }
+  function ensureWorker(){
+    if(worker)return worker;
+    const embedded=$('workerSource');
+    if(embedded){const workerUrl=URL.createObjectURL(new Blob([embedded.textContent],{type:'text/javascript'}));worker=new Worker(workerUrl);URL.revokeObjectURL(workerUrl);}
+    else worker=new Worker('worker.js');
+    const instance=worker;
+    instance.onerror=()=>{
+      if(worker!==instance)return;
+      worker.terminate();worker=null;
+      if(generating){stopJob();status('Unable to calculate this image. Please try again.','Не удалось рассчитать изображение. Попробуйте снова.');}
+    };
+    return worker;
+  }
+  function rememberRoute(data){
+    const key=`${data.algorithm}:${data.pinCount}`;
+    const previous=completedRoutes.get(key);
+    if(previous&&previous.sequence.length>data.sequence.length)return;
+    completedRoutes.delete(key);completedRoutes.set(key,data);
+    while(completedRoutes.size>3)completedRoutes.delete(completedRoutes.keys().next().value);
+  }
+  function findRoute(pinCount,lines,thickness,mode){
+    if(mode==='exact')return null;
+    const key=`portrait-smart:${pinCount}`;
+    const cached=completedRoutes.get(key);
+    if(!cached||cached.imageRevision!==imageRevision)return null;
+    if(cached.actualLines<lines&&!['blank','no-candidates','no-improvement'].includes(cached.stopReason))return null;
+    completedRoutes.delete(key);completedRoutes.set(key,cached);
+    const sequence=cached.sequence.slice(0,lines+1);
+    return {...cached,sequence,actualLines:sequence.length-1,thickness,renderStyle:'fine'};
+  }
+  function drawSegment(segment,pins,thickness){
+    if(!segment||segment.length<2)return;
+    const scale=$('resultCanvas').width/500;
+    context.save();context.scale(scale,scale);context.strokeStyle='#000';context.lineWidth=thickness/2;context.lineCap='round';context.lineJoin='round';context.beginPath();
+    for(let i=1;i<segment.length;i++){
+      const a=pins[segment[i-1]],b=pins[segment[i]];
+      context.moveTo(a.x,a.y);context.lineTo(b.x,b.y);
+    }
+    context.stroke();
+    context.restore();
+  }
+  function acceptResult(data,bitmap){
+    pendingRoute=null;
+    $('previewEmpty').hidden=true;result=data;$('resultCanvas').width=$('resultCanvas').height=1000;
+    if(bitmap)context.putImageData(new ImageData(bitmap,1000,1000),0,0);
+    else render($('resultCanvas'),result);
+    $('previewMeta').textContent=`${result.pinCount} ${say('pins','гвоздей')} · ${(result.sequence.length-1).toLocaleString('ru-RU')} ${say('lines','линий')}`;
+    $('previewMeta').dataset.calculationMs=String(result.calculationMs||0);
+    $('resultActions').hidden=false;setBusy(false);
+    $('sequenceInput').value=result.sequence.join(', ');
+    $('seqPins').value=result.pinCount;$('seqPinsValue').textContent=result.pinCount;
+    $('seqThickness').value=result.thickness;$('seqThicknessValue').textContent=formatNumber(result.thickness);
+    $('seqOrigin').value=result.pinOrigin||'right';
+  }
+  function displayRoute(data,onReady=()=>{},delay=0){
+    cancelRendering();
+    const revision=renderRevision,thisJob=job;
+    const style=data.renderStyle||'fine';
+    data={...data,renderStyle:style};
+    $('previewEmpty').hidden=true;pendingRoute=data;$('resultActions').hidden=true;
+    const key=`${data.routeKey}:${data.actualLines}:${data.thickness}:${style}`;
+    const bitmap=renderedImages.get(key);
+    if(style==='classic'||bitmap){acceptResult(data,bitmap);onReady();return;}
+    $('interactiveBtn').disabled=$('downloadBtn').disabled=true;
+    ['lighterBtn','svgBtn','txtBtn','jsonBtn'].forEach(id=>$(id).disabled=true);
+    status('Drawing fine threads…','Отрисовка тонких нитей…');
+    renderDelay=setTimeout(()=>{
+      if(revision!==renderRevision||thisJob!==job)return;
+      try{
+        const embedded=$('workerSource');
+        if(embedded){const url=URL.createObjectURL(new Blob([embedded.textContent],{type:'text/javascript'}));renderWorker=new Worker(url);URL.revokeObjectURL(url);}
+        else renderWorker=new Worker('worker.js');
+        renderWorker.onmessage=({data:message})=>{
+          if(revision!==renderRevision||thisJob!==job)return;
+          renderWorker.terminate();renderWorker=null;
+          if(message.type==='rendered'){
+            $('previewMeta').dataset.renderMs=String(message.renderMs||0);
+            renderedImages.set(key,message.pixels);
+            while(renderedImages.size>6)renderedImages.delete(renderedImages.keys().next().value);
+            acceptResult(data,message.pixels);onReady();
+          }else{setBusy(false);status('Fine thread rendering failed. Try Classic preview.','Не удалось показать портрет. Нажмите «Создать портрет» ещё раз.');}
+        };
+        renderWorker.onerror=()=>{if(revision!==renderRevision||thisJob!==job)return;cancelRendering();setBusy(false);status('Fine thread rendering failed. Try Classic preview.','Не удалось показать портрет. Нажмите «Создать портрет» ещё раз.');};
+        renderWorker.postMessage({type:'render',jobId:thisJob,sequence:data.sequence,pins:data.pins,size:data.size,thickness:data.thickness*2/3,outputSize:1000});
+      }catch(error){cancelRendering();setBusy(false);status('Unable to draw the preview.','Не удалось отрисовать предпросмотр.');}
+    },delay);
+  }
+  function getCropRect(){
+    const w=image.naturalWidth,h=image.naturalHeight,base=Math.min(w,h),side=base*100/cropZoom;
+    const maxX=Math.max(0,w-side),maxY=Math.max(0,h-side);
+    return {x:maxX*cropX/100,y:maxY*cropY/100,size:side};
+  }
+  function drawCropPreview(){
+    if(!image)return;
+    const canvas=$('cropPreview'),ctx=canvas.getContext('2d'),r=getCropRect();
+    ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage(image,r.x,r.y,r.size,r.size,0,0,canvas.width,canvas.height);
+  }
+  function updateCrop(){
+    cropZoom=Number($('cropZoom').value);cropX=Number($('cropX').value);cropY=Number($('cropY').value);
+    $('cropZoomValue').textContent=cropZoom+'%';$('cropXValue').textContent=cropX+'%';$('cropYValue').textContent=cropY+'%';
+
+    // A crop/zoom change creates a different source image. Invalidate both the
+    // calculated route and its rendered bitmap so Generate cannot reuse a
+    // portrait made from the previous crop with the same pin count.
+    imageRevision++;
+    preparedDarkness=null;
+    completedRoutes.clear();
+    renderedImages.clear();
+    drawCropPreview();
+
+    if(result || pendingRoute){
+      cancelRendering();
+      result=null;pendingRoute=null;
+      $('resultActions').hidden=true;
+      emptyCanvas();
+      status('Обрезка изменена. Создайте портрет заново.');
+    }
+  }
+  ['cropZoom','cropX','cropY'].forEach(id=>$(id).addEventListener('input',updateCrop));
+  $('cropReset').addEventListener('click',()=>{ $('cropZoom').value=100;$('cropX').value=50;$('cropY').value=50;updateCrop(); });
+  function prepareImage(){
+    if(preparedDarkness)return preparedDarkness;
+    const size=500,c=document.createElement('canvas');c.width=c.height=size;
+    const ctx=c.getContext('2d',{willReadFrequently:true}),rect=getCropRect();
+    ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);
+    // Keep the small white surround used by the string-art solver; the selected
+    // square crop is scaled into the inner photo area.
+    const inset=Math.round(size*0.03),photoSize=size-inset*2;
+    ctx.drawImage(image,rect.x,rect.y,rect.size,rect.size,inset,inset,photoSize,photoSize);
+    const pixels=ctx.getImageData(0,0,size,size).data,darkness=new Uint8Array(size*size);
+    for(let y=0;y<size;y++) for(let x=0;x<size;x++){
+      const p=y*size+x,o=p*4;
+      darkness[p]=255-Math.floor((pixels[o]+pixels[o+1]+pixels[o+2])/3);
+    }
+    preparedDarkness=darkness;return darkness;
+  }
+  $('uploadZone').addEventListener('click',()=>$('imageInput').click());
+  $('imageInput').addEventListener('change',()=>loadImage($('imageInput').files[0]));
+  $('uploadZone').addEventListener('dragover',e=>{e.preventDefault();$('uploadZone').classList.add('dragover');});
+  $('uploadZone').addEventListener('dragleave',()=>$('uploadZone').classList.remove('dragover'));
+  $('uploadZone').addEventListener('drop',e=>{e.preventDefault();$('uploadZone').classList.remove('dragover');if(!generating)loadImage(e.dataTransfer.files[0]);});
+  function loadImage(file){
+    if(!file)return;
+    if(!/^image\/(jpeg|png|webp|gif|bmp)$/.test(file.type)){status('Choose a JPG, PNG or WebP image.','Выберите изображение JPG, PNG или WebP.');return;}
+    if(file.size>30*1024*1024){status('Please choose an image under 30 MB.','Выберите изображение до 30 МБ.');return;}
+    stopJob();imageRevision++;preparedDarkness=null;completedRoutes.clear();renderedImages.clear();result=null;$('resultActions').hidden=true;emptyCanvas();
+    image=null;$('generateBtn').disabled=true;
+    const token=job,url=URL.createObjectURL(file),nextImage=new Image();
+    nextImage.onload=()=>{
+      if(token!==job){URL.revokeObjectURL(url);return;}
+      if(imageUrl)URL.revokeObjectURL(imageUrl);
+      image=nextImage;imageUrl=url;$('sourcePreview').src=url;$('sourcePreview').hidden=false;$('uploadPlaceholder').hidden=true;
+      cropZoom=100;cropX=50;cropY=50;$('cropZoom').value=100;$('cropX').value=50;$('cropY').value=50;updateCrop();$('cropSettings').hidden=false;
+      status('Image ready. Adjust the square crop if needed.','Фото готово. При желании настройте квадратную обрезку.');setBusy(false);
+      // Prepare reusable geometry while the user inspects the photo and settings.
+      try{ensureWorker().postMessage({type:'prepare',jobId:job,pins:Number($('pins').value),size:500,algorithm:'portrait'});}catch{/* The Generate action reports any unsupported Worker errors. */}
+    };
+    nextImage.onerror=()=>{URL.revokeObjectURL(url);if(token===job)status('Could not read this image. Try a different file.','Не удалось открыть фото. Попробуйте другой файл.');};
+    nextImage.src=url;
+  }
+  $('generateBtn').addEventListener('click',()=>{
+    if(!image)return;
+    stopJob();result=null;$('resultActions').hidden=true;setBusy(true);$('progress').value=0;
+    $('previewEmpty').hidden=true;status('Preparing image…','Подготовка изображения…');
+    const thisJob=job,started=performance.now();
+    try{
+      const pinCount=number('pins',50,800),lines=number('lines',500,20000),thickness=number('thickness',.05,3),mode=$('generationMode').value;
+      const cached=findRoute(pinCount,lines,thickness,mode);
+      if(cached){
+        displayRoute(cached,()=>{const elapsed=((performance.now()-started)/1000).toFixed(2);
+          status(`Ready in ${elapsed}s · reused saved calculation.`,`Готово за ${elapsed} с · использован готовый расчёт.`);});return;
+      }
+      ensureWorker();
+      const pinCoordinates=pinsFor(pinCount);
+      $('resultCanvas').width=$('resultCanvas').height=400;context.fillStyle='#fff';context.fillRect(0,0,400,400);
+      $('previewMeta').textContent=say('Building your pattern…','Построение схемы…');
+      worker.onmessage=({data})=>{
+        if(thisJob!==job||data.jobId!==thisJob)return;
+        if(data.type==='progress'){
+          $('progress').value=100*data.done/data.total;
+          drawSegment(data.segment,pinCoordinates,thickness);
+          $('previewMeta').textContent=`${pinCount} ${say('pins','гвоздей')} · ${data.done.toLocaleString('ru-RU')} / ${data.total.toLocaleString('ru-RU')}`;
+          status(`Generating: ${data.done.toLocaleString('ru-RU')} / ${data.total.toLocaleString('ru-RU')} lines…`,`Расчёт: ${data.done.toLocaleString('ru-RU')} / ${data.total.toLocaleString('ru-RU')} линий…`);
+        }
+        if(data.type==='done'){
+          const algorithm=`portrait-${mode}`;
+          const complete={...data.result,pinCount,thickness,source:'image',imageRevision,algorithm,routeKey:`image:${imageRevision}:${algorithm}:${pinCount}`,renderStyle:'fine'};
+          rememberRoute(complete);
+          displayRoute({...complete},()=>{
+            const elapsed=((performance.now()-started)/1000).toFixed(2);
+            if(result.sequence.length<=1)status('The image is blank. Choose an image with darker details.','Изображение пустое. Выберите фото с тёмными деталями.');
+            else status(`Ready in ${elapsed}s · ${result.actualLines.toLocaleString('ru-RU')} lines.`,`Готово за ${elapsed} с · ${result.actualLines.toLocaleString('ru-RU')} линий.`);
+          });
+        }
+        if(data.type==='error'){stopJob();status('Generation failed: '+data.message,'Не удалось рассчитать портрет. Попробуйте снова или уменьшите число линий в «Дополнительно».');}
+      };
+      const darkness=prepareImage().slice();worker.postMessage({jobId:thisJob,size:500,pins:pinCount,lines,mode,darkness,algorithm:'portrait'},[darkness.buffer]);
+    }catch(err){stopJob();status('Generation failed: '+err.message,'Не удалось рассчитать портрет. Проверьте параметры в «Дополнительно» и попробуйте снова.');}
+  });
+  $('cancelBtn').addEventListener('click',()=>{stopJob();result=null;$('resultActions').hidden=true;emptyCanvas();setBusy(false);status('Generation cancelled.','Расчёт отменён.');});
+  $('resetBtn').addEventListener('click',()=>{
+    stopJob(true);imageRevision++;preparedDarkness=null;completedRoutes.clear();renderedImages.clear();pause();if($('playerDialog').open)$('playerDialog').close();image=null;result=null;
+    if(imageUrl)URL.revokeObjectURL(imageUrl);imageUrl=null;$('imageInput').value='';$('sourcePreview').removeAttribute('src');$('sourcePreview').hidden=true;$('uploadPlaceholder').hidden=false;
+    $('cropSettings').hidden=true;cropZoom=100;cropX=50;cropY=50;
+    $('generationMode').value='smart';
+    [['pins',288],['lines',4000],['thickness',.25],['seqPins',288],['seqThickness',.25]].forEach(([id,v])=>{$(id).value=v;$(id+'Value').textContent=formatNumber(v);});
+    $('seqOrigin').value='right';$('advancedSettings').open=false;
+    $('sequenceInput').value='';$('seqError').textContent='';$('resultActions').hidden=true;emptyCanvas();setBusy(false);status('Ready for your image.','Загрузите фотографию.');
+  });
+  ['pins','lines','thickness','seqPins','seqThickness'].forEach(id=>$(id).addEventListener('input',()=>$(id+'Value').textContent=formatNumber($(id).value)));
+  function requireNewCalculation(){
+    if(generating)return;
+    cancelRendering();pendingRoute=null;setBusy(false);$('resultActions').hidden=!result;
+    status('Apply the new settings with Generate or Visualize Sequence.','Нажмите «Создать портрет» или «Показать схему», чтобы применить новые настройки.');
+  }
+  ['pins','seqPins'].forEach(id=>$(id).addEventListener('input',()=>{cancelAnimationFrame(redrawFrame);requireNewCalculation();}));
+  $('seqOrigin').addEventListener('change',()=>{
+    cancelAnimationFrame(redrawFrame);
+    const current=pendingRoute||result;
+    if(!current||generating)return;
+    const pinOrigin=$('seqOrigin').value;
+    displayRoute({...current,pinOrigin,pins:pinsFor(current.pinCount,500,pinOrigin),source:'sequence',routeKey:`import:${++importRevision}`},()=>status('Orientation updated; pin numbers are unchanged.','Ориентация изменена, номера гвоздей сохранены.'));
+  });
+  function updateInstantly(id){
+    cancelAnimationFrame(redrawFrame);
+    redrawFrame=requestAnimationFrame(()=>{
+      if(generating||(!result&&!pendingRoute))return;
+      const current=pendingRoute||result;
+      if(id==='seqThickness'){
+        if(current.pinCount!==Number($('seqPins').value))return;
+        displayRoute({...current,thickness:Number($('seqThickness').value),renderStyle:'fine'},()=>status('Preview updated; winding order unchanged.','Предпросмотр обновлён, порядок намотки сохранён.'),120);
+      }else{
+        if(current.source!=='image'||current.imageRevision!==imageRevision||current.pinCount!==Number($('pins').value))return;
+        const cached=findRoute(Number($('pins').value),Number($('lines').value),Number($('thickness').value));
+        if(!cached){requireNewCalculation();return;}
+        displayRoute(cached,()=>status('Preview updated from the saved calculation.','Предпросмотр обновлён из готового расчёта.'),120);
+      }
+    });
+  }
+  ['lines','thickness','seqThickness'].forEach(id=>$(id).addEventListener('input',()=>updateInstantly(id)));
+  function parseSequence(text,pinCount,thickness){
+    let sequence,raw=text.trim(),renderStyle='fine',pinOrigin=$('seqOrigin').value;
+    if(!raw)throw new Error(say('Paste a sequence first.','Сначала вставьте последовательность.'));
+    if(raw[0]==='['||raw[0]==='{'){
+      let parsed;try{parsed=JSON.parse(raw);}catch{throw new Error(say('Invalid JSON.','Некорректный JSON.'));}
+      if(Array.isArray(parsed))sequence=parsed;
+      else{sequence=parsed.sequence;pinCount=parsed.pinCount??pinCount;thickness=parsed.thickness??thickness;pinOrigin=parsed.pinOrigin||'right';}
+    }else{
+      let declaredLines=null,startPin=null;
+      const marker=raw.match(/(?:Последовательность|Sequence)\s*:\s*/i);
+      if(marker){
+        const header=raw.slice(0,marker.index),pinsMatch=header.match(/(?:Гвоздей|Pins)\s*:\s*(\d+)/i),thicknessMatch=header.match(/(?:Толщина нити|Line thickness(?: \(preview\))?)\s*:\s*([\d.,]+)/i);
+        const lineMatch=header.match(/(?:Линий|Lines)\s*:\s*(\d+)/i),startMatch=header.match(/(?:Начните с гвоздя\s*№?\s*|Start at pin\s*)(\d+)/i);
+        if(pinsMatch)pinCount=Number(pinsMatch[1]);if(thicknessMatch)thickness=Number(thicknessMatch[1].replace(',','.'));
+        if(lineMatch)declaredLines=Number(lineMatch[1]);if(startMatch)startPin=Number(startMatch[1]);
+        if(/(?:Гвоздь\s*0[^\n]*сверху|Pin\s*0[^\n]*12 o.clock)/i.test(raw))pinOrigin='top';
+        else if(/(?:Гвоздь\s*0[^\n]*справа|Pin\s*0[^\n]*3 o.clock)/i.test(raw))pinOrigin='right';
+        raw=raw.slice(marker.index+marker[0].length).split(/\n\s*=+/)[0].trim();
+      }
+      const tokens=raw.split(/[\s,;→]+/).filter(Boolean);
+      if(tokens.some(t=>!/^\d+$/.test(t)))throw new Error(say('Use whole pin numbers separated by commas, spaces or arrows.','Используйте целые номера, разделённые запятыми, пробелами или стрелками.'));
+      sequence=tokens.map(Number);
+      if(startPin!==null&&declaredLines===sequence.length)sequence.unshift(startPin);
+    }
+    if(!['right','top'].includes(pinOrigin))throw new Error(say('Unknown pin-zero position.','Неизвестное положение нулевого гвоздя.'));
+    if(!Number.isInteger(pinCount)||pinCount<50||pinCount>800)throw new Error(say('Pin count must be between 50 and 800.','Количество гвоздей — от 50 до 800.'));
+    if(typeof thickness!=='number'||!Number.isFinite(thickness)||thickness<.05||thickness>3)throw new Error(say('Thickness must be between 0.05 and 3.','Толщина — от 0,05 до 3.'));
+    if(!Array.isArray(sequence)||sequence.length<2||sequence.length>20001)throw new Error(say('Enter between 2 and 20,001 pin numbers.','Введите от 2 до 20 001 номеров гвоздей.'));
+    if(sequence.some(v=>!Number.isInteger(v)||v<0||v>=pinCount))throw new Error(say(`Pin numbers must be 0–${pinCount-1}.`,`Номера гвоздей должны быть от 0 до ${pinCount-1}.`));
+    return {sequence,pinCount,thickness,pins:pinsFor(pinCount,500,pinOrigin),pinOrigin,size:500,actualLines:sequence.length-1,source:'sequence',routeKey:`import:${++importRevision}`,renderStyle};
+  }
+  $('visualizeBtn').addEventListener('click',()=>{
+    try{const data=parseSequence($('sequenceInput').value,number('seqPins',50,800),number('seqThickness',.05,3));stopJob();setBusy(true);displayRoute(data,()=>status('Sequence loaded. Open Interactive Mode to follow each thread.','Схема загружена. Нажмите «Начать намотку», чтобы следовать инструкции.'));$('seqError').textContent='';}
+    catch(err){$('seqError').textContent=err.message;}
+  });
+  function saveBlob(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+  function downloadPng(){if(result)$('resultCanvas').toBlob(blob=>{if(blob)saveBlob(blob,'Портрет.png');},'image/png');}
+  $('downloadBtn').addEventListener('click',downloadPng);
+  $('lighterBtn').addEventListener('click',()=>{
+    if(!result||generating)return;
+    const thickness=Math.max(.05,Math.round((result.thickness-.05)*100)/100);
+    for(const id of ['thickness','seqThickness']){$(id).value=thickness;$(id+'Value').textContent=formatNumber(thickness);}
+    displayRoute({...result,thickness,renderStyle:'fine'},()=>status('Lighter preview. The winding sequence is unchanged.','Предпросмотр светлее. Порядок намотки не изменён.'));
+  });
+  $('svgBtn').addEventListener('click',()=>{
+    if(!result)return;const segments=result.sequence.slice(1).map((pin,i)=>{const a=result.pins[result.sequence[i]],b=result.pins[pin];return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"/>`;}).join('');
+    const shape=result.renderStyle==='fine'?`<polyline points="${result.sequence.map(pin=>`${result.pins[pin].x},${result.pins[pin].y}`).join(' ')}"/>`:segments;
+    const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 500 500"><title>Портрет из нитей: ${result.pinCount} гвоздей, ${result.sequence.length-1} линий</title><rect width="500" height="500" fill="white"/><g fill="none" stroke="black" stroke-width="${result.thickness/(result.renderStyle==='fine'?3:2)}" stroke-linecap="round" stroke-linejoin="round">${shape}</g></svg>`;
+    saveBlob(new Blob([svg],{type:'image/svg+xml'}),'Схема.svg');
+  });
+  $('txtBtn').addEventListener('click',()=>{
+    if(!result)return;saveBlob(new Blob([`ИНСТРУКЦИЯ ПО НАМОТКЕ\n=====================\nГвоздей: ${result.pinCount}\nЛиний: ${result.sequence.length-1}\nТолщина нити: ${result.thickness}\n\nГвоздь 0 — ${result.pinOrigin==='top'?'сверху, в положении 12 часов':'справа, в положении 3 часа'}.\nПронумеруйте гвозди по часовой стрелке от 0 до ${result.pinCount-1}.\nНачните с гвоздя ${result.sequence[0]}.\nЗакрепите нить и соединяйте гвозди в указанном порядке, не обрезая её между шагами.\nПервое число — начальный гвоздь, каждое следующее — гвоздь для следующего витка.\nТолщина выше относится к рисунку на экране, а не к диаметру настоящей нити.\n\nПоследовательность:\n${result.sequence.join(', ')}\n`],{type:'text/plain;charset=utf-8'}),'Инструкция.txt');
+  });
+  $('jsonBtn').addEventListener('click',()=>{if(result)saveBlob(new Blob([JSON.stringify({version:3,pinCount:result.pinCount,pinOrigin:result.pinOrigin||'right',thickness:result.thickness,renderStyle:result.renderStyle,sequence:result.sequence},null,2)],{type:'application/json'}),'Проект.json');});
+  function pause(){if(timer)clearInterval(timer);timer=null;$('playPause').textContent=say('Play','Пуск');}
+  function showStep(){
+    const max=result.sequence.length-1;step=Math.max(0,Math.min(step,max));$('stepSlider').value=step;$('stepValue').textContent=`Шаг ${step} из ${max}`;
+    $('pinFrom').textContent=result.sequence[Math.max(0,step-1)];$('pinTo').textContent=result.sequence[step];
+    $('previousStep').disabled=step===0;$('nextStep').disabled=step===max;render($('playerCanvas'),result,step,true);
+    if(step===max)pause();
+  }
+  $('interactiveBtn').addEventListener('click',()=>{
+    if(!result)return;step=0;$('stepSlider').max=result.sequence.length-1;$('playerSequence').value=result.sequence.join(', ');$('playerDialog').showModal();showStep();
+  });
+  $('closePlayer').addEventListener('click',()=>$('playerDialog').close());$('playerDialog').addEventListener('close',pause);
+  $('previousStep').addEventListener('click',()=>{pause();step--;showStep();});$('nextStep').addEventListener('click',()=>{pause();step++;showStep();});
+  $('restartPlayer').addEventListener('click',()=>{pause();step=0;showStep();});$('stepSlider').addEventListener('input',()=>{pause();step=Number($('stepSlider').value);showStep();});
+  function play(){if(!result||result.sequence.length<2)return;if(step>=result.sequence.length-1)step=0;$('playPause').textContent=say('Pause','Пауза');timer=setInterval(()=>{step++;showStep();},1000/Number($('speed').value));}
+  $('playPause').addEventListener('click',()=>timer?pause():play());$('speed').addEventListener('input',()=>{if(timer){pause();play();}});
+  $('copySequence').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(result.sequence.join(', '));$('copySequence').textContent=say('Copied!','Скопировано!');}catch{$('playerSequence').focus();$('playerSequence').select();$('copySequence').textContent=say('Press Ctrl+C','Нажмите Ctrl+C');}});
+  $('privacyBtn')?.addEventListener('click',()=>$('privacyDialog').showModal());$('closePrivacy')?.addEventListener('click',()=>$('privacyDialog').close());
+  emptyCanvas();setBusy(false);status('Ready.','Загрузите фото — настройки уже подобраны.');
+})();
+
+</script>
+</body>
+</html>
